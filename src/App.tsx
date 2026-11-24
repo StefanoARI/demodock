@@ -807,6 +807,7 @@ export default function App() {
                       alt="Sala centrale del Dock 71 con la monumentale Gru"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95 contrast-105"
                       src={PUB_IMAGES.craneHero}
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
 

@@ -1,3 +1,5 @@
+import heroCraneRestaurantImg from '../assets/images/hero_crane_restaurant_1795516259292.jpg';
+
 export interface MenuItem {
   id: string;
   name: string;
@@ -37,7 +39,7 @@ export interface GalleryImage {
 
 export const PUB_IMAGES = {
   logo: '/logo-dock71.png',
-  craneHero: 'https://lh3.googleusercontent.com/aida/AEtjO1XxupyxkfMGHwtotjZ4IXSxhNJWBT0dNQMuDHHo-vcmJsTlYqwsVzDGEIrmhCfSVYACanJUq54A9QxP7WCYzXkj7RAx1Hbu8v5o9DW_8C4OJevohNdrk26W4c_cnRq8dX9x-rBvkdHV0utMfnPJSVN6v53E3YCPDlZc3di1GZBrdT8zsn3rY0L2PhorRTrDJJTaugFrg791cggiJiyPsbAEgzWg4nWfZ4S5QPuCZpjwd_gy4PsFMGD0b1uN',
+  craneHero: heroCraneRestaurantImg,
   pizza: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9ZyFsk0CAlmIJ-mpx_wcEHWiqPW5Rl-MVFVvU2pSkKBZ9mH2KMDXbMiZxsmJUbep3xzuhuZF-CY8AUlHlmqVVvJ97q0uTEF30Xus2HYuXjZq0gAcWQKnaYxJhSkpqwACovVLp5v1cyVK0I31xE2m3faHmZeO7Ti80Zsirk-_-HSAjNKzfHf8wSzN55Kp4ThHJ-I64SN00iDXPw6wyJiN-JfLKPQ5OMtbCTHEFtjU83cbgX02_EUhB9n_FTrm6aVKX82I',
   burger: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCM8L475a42ztnNLblYPinK5TI7vzGhlQaj6beNyBRWGwzrKKk7nkXya_FmbrTzO1GiqfmEZle-JY9MLKTXW2GhOjDx1rg44cGqevm6dj0HKZweSadh4gf3WAk4MPmYcrQo2kUU3g08mQl0z0_nQ4tNOAtBrrLcTHi0P0FybqZNunfCKTIIP4cKhsWJrC9GAPi84inzv68kzDj0Hs1hd-kwP7CFwYPTkpE9FK7ULcndZfYhBUp1czaRrh_gDfiHjWNC9W4',
   beerGlass: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBkhWndZScHkbPn1j2F-_56ws8ZdxZ0zcD8N4WFY6cvbCJ4GjjUzQmxDJurx5_1AbB7WUNi-i5SGiKzeAoKjbBMXs2PQ67TthMRpbKMFsosA0xrmVHWc1qEpIuwgIyf5qNRrQdgkOAxZbweC0gz6UVl6NRdTltFJvxue_yk08f16zOHZics2oCKfxOTRXkrYtQK865LQ0G4Ru_phte7ppM4r-O3RY2KMLHyvieB7uDWiJjfwbvkROJa6YdFjGULHyzwRA4',
