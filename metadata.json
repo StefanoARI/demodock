@@ -1,0 +1,6 @@
+{
+  "name": "Dock 71 Cantù - Risto-Pub & Birreria Portuale",
+  "description": "Dock 71 a Cantù (Via Milano 71): birreria artigianale, griglia, burger gourmet, pizze a lunga lievitazione 48h e Sky Sport Maxischermo. Prenota ora il tuo tavolo online.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,493 @@
+<!DOCTYPE html><html class="" lang="it" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Dock 71 | Risto-Pub &amp; Birreria Cantù</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;500;700&amp;family=Work+Sans:wght@400;500;700&amp;family=Outfit:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","on-error-container":"#93000a","on-background":"#1c1c19","on-primary-container":"#ff8da3","on-secondary-fixed":"#221b07","background":"#fcf9f4","primary-container":"#7b2039","on-tertiary":"#ffffff","surface-tint":"#9f3c54","on-secondary-fixed-variant":"#50462e","on-surface":"#1c1c19","surface-container-low":"#f6f3ee","surface-variant":"#e5e2dd","surface-bright":"#fcf9f4","on-secondary-container":"#6e6349","on-tertiary-container":"#bcacad","error-container":"#ffdad6","surface-container-highest":"#e5e2dd","tertiary":"#352a2b","secondary":"#685d44","on-secondary":"#ffffff","tertiary-fixed-dim":"#d4c2c3","surface":"#fcf9f4","tertiary-container":"#4c4041","secondary-fixed":"#f1e1c0","on-primary":"#ffffff","primary-fixed-dim":"#ffb2be","on-tertiary-fixed-variant":"#504445","on-surface-variant":"#554245","inverse-surface":"#31302d","on-tertiary-fixed":"#23191a","tertiary-fixed":"#f1dedf","on-primary-fixed-variant":"#80243d","surface-dim":"#dcdad5","surface-container-high":"#ebe8e3","on-primary-fixed":"#3f0015","primary-fixed":"#ffd9de","secondary-fixed-dim":"#d4c5a6","outline":"#887174","secondary-container":"#f1e1c0","surface-container":"#f0ede9","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-on-surface":"#f3f0eb","primary":"#5d0624","inverse-primary":"#ffb2be","outline-variant":"#dbc0c3"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","gutter":"1.25rem","space-lg":"1.5rem","margin":"2rem","space-sm":"0.5rem","gutter-mobile":"0.75rem","space-md":"1rem","margin-mobile":"1rem","space-xs":"0.25rem"},"fontFamily":{"headline-md":["Outfit"],"display-lg-mobile":["Epilogue"],"body-sm":["Work Sans"],"headline-sm":["Outfit"],"label-lg":["Outfit"],"headline-lg-mobile":["Epilogue"],"body-md":["Work Sans"],"display-lg":["Epilogue"],"headline-lg":["Epilogue"],"label-md":["Outfit"],"label-sm":["Outfit"],"body-lg":["Work Sans"],"subheading-lg":["Outfit"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"subheading-lg":["18px",{"lineHeight":"24px","letterSpacing":"0.04em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#e2d9cc] shadow-sm"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><a class="flex items-center gap-3.5 flex-shrink-0 group" data-path="home" href="#"><div class="w-11 h-11 rounded-full border border-[#dbc0c3] p-1 bg-white shadow-sm flex items-center justify-center flex-shrink-0 group-hover:border-[#7b2039] transition-colors"><img alt="Dock 71 Cantù" class="h-full w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLpgbvYOpsw4y4Es6pg9rdVJnA8JPZmBSjkAHgIpDH8__DfntsoTmcx2D7lkaDNH-GW5H8A5kyfYlzL-YZ04hA5yaKhAORfRzTLvh4XLBbuMP42s4-di_KmXN_F73p4VQichcyWLdtbCSeYn7mgSocwQ64FVUxZLJmD2vhCwtqlB4MlLwr7qWjyUIPvMupa6D7yyFwBQDz88aiOHm9D0Qecv4S3F3S7kgdxSpHBIfpHQobVb3RUFDCXjxEqvnbN_s_dIk"></div><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-[#1c1c19]">Dock 71</span><span class="hidden sm:inline-block font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-[#f1e1c0]/40 border border-[#dbc0c3] text-[#7b2039] uppercase tracking-widest font-semibold">Cantù</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Risto-Pub &amp; Birreria Artigianale</span></div></a><nav class="hidden xl:flex items-center gap-1 p-1 rounded-xl bg-[#f6f3ee] border border-[#e2d9cc]" data-active-classes="bg-[#7b2039] text-white font-semibold rounded-lg shadow-sm"><a class="px-3.5 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-[#1c1c19] hover:bg-white rounded-lg transition-all" data-path="home" href="#">Home</a><a class="px-3.5 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-[#1c1c19] hover:bg-white rounded-lg transition-all" data-path="menu" href="#">Menù &amp; Birre</a><a class="px-3.5 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-[#1c1c19] hover:bg-white rounded-lg transition-all" data-path="galleria" href="#">Galleria</a><a class="px-3.5 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-[#1c1c19] hover:bg-white rounded-lg transition-all" data-path="esperienze" href="#">Da noi puoi...</a><a aria-current="page" class="px-3.5 py-2 uppercase tracking-wider transition-all bg-[#7b2039] text-white font-semibold rounded-lg shadow-sm" data-path="contatti" href="#">Contatti</a></nav><div class="flex items-center gap-3 lg:gap-4 flex-shrink-0"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white border border-[#e2d9cc] shadow-sm"><span class="material-symbols-outlined text-[#7b2039] text-[18px]">call</span><div class="flex flex-col text-right"><span class="hidden md:block font-label-sm text-[9px] uppercase tracking-widest text-on-surface-variant font-semibold">Prenota &amp; Info WhatsApp</span><a class="font-label-md text-label-md text-[#7b2039] hover:text-[#5d0624] font-bold tracking-wider transition-colors" href="tel:0314487120">031 4487120</a></div></div><a class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-[#7b2039] text-white hover:bg-[#5d0624] font-label-md text-label-md uppercase tracking-widest font-bold transition-all shadow-md active:scale-95" data-path="prenotazione" href="#">PRENOTA ORA</a></div></div></header><main class="w-full pt-20 bg-[#fcf9f4] min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner & Header Block -->
+<section class="relative w-full overflow-hidden bg-surface-container-low px-6 lg:px-12 py-16">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-80 h-80 rounded-full bg-secondary-container/40 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-bold">Coordinate &amp; Informazioni Pratiche</span>
+</div>
+<h1 class="font-display-lg text-headline-lg lg:text-display-lg text-on-surface max-w-4xl tracking-tight mb-4">
+        Contatti, Orari &amp; Dove Trovarci a <span class="text-primary-container">Cantù</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        Siamo in Via Milano 71 a Cantù. Tutte le coordinate per raggiungerci, prenotare o fare due chiacchiere con noi tra boccali di birra fresca e sapori autentici.
+      </p>
+<!-- Quick Action Badges Strip -->
+<div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:shadow-md transition-all font-label-md text-label-md font-semibold" href="tel:0314487120">
+<span class="material-symbols-outlined text-primary-container text-[18px]">call</span>
+          031 4487120
+        </a>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_parking</span>
+          Parcheggio Gratuito Riservato
+        </div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary-container text-[18px]">sports_bar</span>
+          Cucina &amp; Spine Aperte 7/7
+        </div>
+</div>
+</div>
+</section>
+<!-- Key Information Bento Grid -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 -mt-6 z-20 w-full mb-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Posizione & Accesso -->
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">pin_drop</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Indirizzo Storico</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">Via Milano 71</h2>
+<p class="font-label-md text-label-md text-primary-container font-semibold mt-0.5">22063 Cantù (CO) • Brianza Comasca</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Situato a soli 2 minuti dal centro storico di Cantù, comodissimo e con collegamento rapido da Como, Mariano Comense, Giussano ed Erba lungo la direttrice principale.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between bg-surface-container-low p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Distanza Centro</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">~ 900 metri (2 min)</span>
+</div>
+</div>
+<!-- Card 2: Parcheggio Privato Gratuito -->
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[26px]">directions_car</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Zero Pensieri Parcheggio</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">Piazzale Riservato Gratuito</h2>
+<p class="font-label-md text-label-md text-secondary font-semibold mt-0.5">Direttamente davanti all'ingresso</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Ampia disponibilità di stalli per auto, SUV, furgoni e car sharing. Piazzale completamente illuminato di sera, video-controllato e senza gradini per il pieno accesso disabili.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between bg-surface-container-low p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Costo Sosta</span>
+<span class="font-label-md text-label-md text-primary-container font-bold uppercase tracking-wider">100% Gratuito Clienti</span>
+</div>
+</div>
+<!-- Card 3: Canale Diretto Telefono & WhatsApp -->
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[26px]">headset_mic</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Linea Diretta &amp; WhatsApp</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">031 4487120</h2>
+<p class="font-label-md text-label-md text-primary-container font-semibold mt-0.5">Unico numero per chiamate &amp; chat</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Per tavoli dell'ultimo minuto, richieste speciali sui menù, catering aziendali o per riservare la postazione vicino agli schermi Sky per la partita.
+          </p>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-2">
+<a class="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded bg-primary-container text-on-primary font-label-md text-label-md font-bold uppercase tracking-wider hover:bg-primary transition-colors shadow-sm" href="tel:0314487120">
+<span class="material-symbols-outlined text-[16px]">call</span>
+            Chiama Subito
+          </a>
+<a class="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold uppercase tracking-wider hover:bg-secondary-container transition-colors shadow-sm" href="https://wa.me/390314487120" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+            WhatsApp
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Orari di Apertura & Atmosfera Dock 71 -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full mb-20">
+<div class="bg-surface-container-lowest rounded-xl p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Schedule Details -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[28px]">schedule</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Dock Time Table</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Orari di Servizio Cucina &amp; Birreria</h2>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Dalla pausa pranzo di qualità per professionisti e artigiani fino alla birra di chiusura notte con lo sport dal vivo. La cucina rimane operativa fino a tardi.
+        </p>
+<!-- Hours List Cards -->
+<div class="flex flex-col gap-3">
+<!-- Mon - Fri -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-2">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Lunedì – Venerdì</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pranzo di lavoro &amp; Serate Pub</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right sm:text-right">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">12:00 – 14:30</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">18:30 – 01:00</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">Cucina Attiva</span>
+</div>
+</div>
+<!-- Sat - Sun -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-2">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sabato &amp; Domenica</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live Sport, Cene tra amici, Dopocena</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">18:30 – 02:00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Match &amp; Pinte</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold">Late Night</span>
+</div>
+</div>
+<!-- Festivi -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-lg bg-secondary-fixed/40 gap-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Giorni Festivi &amp; Turni Campionato</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Champions League, Serie A, Formula 1</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Sempre Aperti su Prenotazione</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Feature Visual & Atmosphere -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<div class="relative w-full h-72 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Warm and welcoming interior of Dock 71 gastropub in Cantù, featuring polished natural oak wood tables, vintage brass beer taps with creamy froth, warm ambient incandescent filament lighting, clean cream walls and patrons enjoying food and craft beers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA59VnQsyNkrXy2ULVyfj0GCz5ACX26RK3rOoNPdX8n2mCaNGz01jnh9zGkWCe4nbkPff68aicyTJ3tET6VRWIMhbySmKZ7e1TaRaSrQa4f_0YbqT8ge6s4lFzKzudwLqd4MY2rJ0aVWMXT6Szw0wWKXqeu5rO1lhpyibna_je9F1EnYCXmt_O1H9aL9K59BqjyipMdXVw0zAhFUqfX5bYAmd32q6-a-HUN9tA8J2S4aFqVme_onl_dxg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-6 text-on-primary">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Cantù Wharf Pub</span>
+<span class="font-headline-sm text-headline-sm">Birre alla Spina &amp; Tavoli Conviviali</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[24px]">wifi</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold">Wi-Fi Veloce &amp; Prese Tavolo</span>
+<span class="font-body-sm text-body-sm text-on-surface">Disponibile gratuitamente per tutti i clienti</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-highest text-on-surface font-semibold">Free Guest</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Mappa & Percorsi -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-bold">Come Raggiungerci</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Mappa Stradale &amp; Navigatori</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">
+          Posizione comoda sia per chi arriva in auto dalle tangenziali di Como e Milano, sia per chi passeggia dal centro di Cantù.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md uppercase tracking-wider font-bold transition-all shadow-sm" href="https://maps.google.com/?q=Via+Milano+71,+22063+Cantu+CO" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">map</span>
+          Apri su Google Maps
+        </a>
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider font-semibold transition-all shadow-sm" href="https://maps.apple.com/?address=Via+Milano+71,+Cantù,+Italy" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">navigation</span>
+          Avvia Waze / Apple Maps
+        </a>
+</div>
+</div>
+<!-- Map Container -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-sm bg-surface-container-high">
+<div class="w-full h-96 lg:h-[460px] bg-cover bg-center" data-location="Via Milano 71, 22063 Cantù CO, Italy"></div>
+<!-- Floating Pin Card Overlay -->
+<div class="absolute top-6 left-6 z-10 bg-surface-container-lowest/95 backdrop-blur-md p-5 rounded-xl shadow-md max-w-xs hidden sm:flex flex-col gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-sm">
+            71
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dock 71 Cantù</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Risto-Pub, Birreria &amp; Sport</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Via Milano 71, Cantù. Parcheggio clienti visibile all'arrivo sul lato destro provenendo da Como.
+        </p>
+<div class="pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+          Ampio Parcheggio Sul Posto
+        </div>
+</div>
+<!-- Quick Route Indications Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-0 bg-surface-container-lowest">
+<div class="p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[22px]">near_me</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Da Como Città</span>
+<p class="font-label-md text-label-md text-on-surface font-bold">~ 18 minuti via SP34 / Canturina</p>
+</div>
+</div>
+<div class="p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[22px]">directions</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Da Mariano Comense</span>
+<p class="font-label-md text-label-md text-on-surface font-bold">~ 10 minuti via SP32</p>
+</div>
+</div>
+<div class="p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[22px]">commute</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Da Erba / Laghi</span>
+<p class="font-label-md text-label-md text-on-surface font-bold">~ 15 minuti via SP40</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Split Contact Form & Direct Inquiries -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full mb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Form Box -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 lg:p-10 shadow-sm flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider font-bold mb-3">
+            Modulo Contatto Diretto
+          </div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Scrivi a Dock 71</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 mb-8">
+            Hai richieste per menu speciali, intolleranze, preventivi per compleanni, cene aziendali o eventi sportivi privati? Rispondiamo entro poche ore.
+          </p>
+<form class="space-y-5" id="contact-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="contact-name">Nome &amp; Cognome *</label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 focus:outline-none transition-all" id="contact-name" placeholder="Es. Marco Rossi" required="" type="text">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="contact-phone">Telefono / WhatsApp *</label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 focus:outline-none transition-all" id="contact-phone" placeholder="Es. 333 1234567" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="contact-email">Email *</label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 focus:outline-none transition-all" id="contact-email" placeholder="iltuonome@email.it" required="" type="email">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="contact-reason">Motivo Richiesta</label>
+<select class="w-full px-3.5 py-2.5 rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 focus:outline-none transition-all" id="contact-reason">
+<option value="info">Informazioni Generali</option>
+<option value="festa">Festa Privata / Compleanno / Laurea</option>
+<option value="aziendale">Cena Aziendale / Gruppo Grande</option>
+<option value="allergie">Allergie / Dieta Senza Glutine</option>
+<option value="partite">Tavolo Dedicato Maxischermo Sport</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="contact-message">Messaggio o Note Particolari *</label>
+<textarea class="w-full px-3.5 py-2.5 rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 focus:outline-none transition-all" id="contact-message" placeholder="Descrivi le tue esigenze, data ipotetica, numero persone o curiosità..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container" id="privacy-check" required="" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="privacy-check">
+                Acconsento al trattamento dei dati personali per ricevere la risposta in merito alla presente richiesta.
+              </label>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md uppercase tracking-widest font-bold shadow-md hover:shadow-lg transition-all active:scale-95" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+              Invia Richiesta
+            </button>
+</form>
+<div class="hidden mt-6 p-4 rounded-lg bg-surface-container text-on-surface" id="form-success">
+<div class="flex items-center gap-2 text-primary-container font-bold mb-1">
+<span class="material-symbols-outlined">task_alt</span>
+              Messaggio Ricevuto con Successo!
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Grazie! Ti risponderemo su WhatsApp o telefono entro poche ore. Per urgenze immediate chiama il <a class="text-primary-container font-bold underline" href="tel:0314487120">031 4487120</a>.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Contact Complement Card -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-6">
+<!-- Private Events Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col gap-4">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">celebration</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Feste Private &amp; Tavolate Gruppi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Compleanni, lauree, ritrovi sportivi e cene tra colleghi. Prepariamo menù concordati con giro-pizza, burger gourmet, taglieri sfiziosi e spine a fiumi.
+            </p>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[18px]">done</span>
+              Spazi riservati e tavoli vicini agli schermi
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[18px]">done</span>
+              Pacchetti bevande e birre alla spina concordate
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[18px]">done</span>
+              Possibilità torta e personalizzazione serata
+            </li>
+</ul>
+</div>
+<!-- Direct Social & Instant Chat Box -->
+<div class="bg-surface-container-high rounded-xl p-8 shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[26px]">forum</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Risposta Istantanea</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Canale WhatsApp Diretto</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hai bisogno di una conferma rapida per un tavolo questa sera? Clicca il pulsante e scrivi direttamente allo staff di sala.
+          </p>
+<a class="inline-flex items-center justify-center gap-2 py-3 px-5 rounded bg-primary-container text-on-primary font-label-md text-label-md font-bold uppercase tracking-wider hover:bg-primary transition-all shadow-sm" href="https://wa.me/390314487120" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+            Chatta con Dock 71 su WhatsApp
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section (Domande Frequenti) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 w-full mb-20">
+<div class="text-center max-w-3xl mx-auto mb-10">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-bold">Dubbi Comuni Risolti</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Domande Frequenti (FAQ)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        Tutto ciò che è utile sapere prima di varcare la soglia del molo di Via Milano 71.
+      </p>
+</div>
+<div class="max-w-4xl mx-auto flex flex-col gap-4">
+<!-- FAQ Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container shrink-0 mt-0.5 font-bold">
+            ?
+          </div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Serve prenotare per venire da Dock 71?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              La prenotazione è <strong>vivamente consigliata</strong> il venerdì, il sabato sera e durante le grandi sfide di calcio e basket trasmesse in diretta. Tuttavia, accogliamo con piacere anche chi passa senza avviso al banco o per una birra veloce con patatine!
+            </p>
+</div>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5 font-bold">
+            ?
+          </div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Avete opzioni senza glutine, vegetariane o vegane?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Assolutamente sì. Abbiamo selezioni di burger vegetariani saporiti, pizze a lunga lievitazione personalizzabili, birre artigianali gluten-free certificate in bottiglia e opzioni dedicate per celiaci. Segnalacelo al momento dell'ordine per la massima cura della cucina.
+            </p>
+</div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container shrink-0 mt-0.5 font-bold">
+            ?
+          </div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">I cani e gli animali domestici sono ammessi?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Certamente! Gli amici a 4 zampe sono benvenuti sia nelle nostre sale interne che nella veranda coperta. Abbiamo sempre a disposizione una ciotola d'acqua fresca per loro: basta chiedere ai ragazzi al bancone.
+            </p>
+</div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5 font-bold">
+            ?
+          </div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">È possibile vedere la Serie A o la Champions League?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Siamo la casa del live sport a Cantù. Tutte le principali partite di Serie A, Champions League, Formula 1, MotoGP e basket Cantù vengono trasmesse sui nostri maxischermi ad alta definizione con audio in sala. Consigliamo di prenotare indicando la preferenza per il match.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Callout Section -->
+<section class="w-full bg-primary-container text-on-primary py-16 px-6 lg:px-12 relative overflow-hidden">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+<div class="absolute left-10 -top-10 w-64 h-64 rounded-full bg-black/10 blur-xl pointer-events-none"></div>
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+<div class="flex flex-col gap-3 text-center md:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed font-bold">Sempre Pronte le Spine e la Cucina</span>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg text-on-primary">
+          Hai già fame o sete?
+        </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-lg">
+          Prenota subito il tuo tavolo a Cantù. Ci vogliono meno di 60 secondi e il tuo posto al pub è assicurato.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full md:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded bg-surface-container-lowest text-primary-container hover:bg-surface-container hover:shadow-xl font-label-lg text-label-lg uppercase tracking-wider font-bold transition-all shadow-lg active:scale-95" data-path="prenotazione" href="#">
+<span class="material-symbols-outlined text-[22px]">restaurant</span>
+          Prenota Tavolo Online
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md uppercase tracking-wider font-bold transition-colors" href="tel:0314487120">
+<span class="material-symbols-outlined text-[18px]">call</span>
+          031 4487120
+        </a>
+</div>
+</div>
+</section>
+<!-- Interactive Simple Form Handler Script -->
+<script>
+    (function() {
+      const form = document.getElementById('contact-form');
+      const successBox = document.getElementById('form-success');
+      if (form && successBox) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          form.classList.add('opacity-50', 'pointer-events-none');
+          setTimeout(function() {
+            form.reset();
+            form.classList.add('hidden');
+            successBox.classList.remove('hidden');
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-[#FAF7F2] text-[#554245] pt-16 pb-12 border-t border-[#e2d9cc]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full border border-[#dbc0c3] p-1 bg-white shadow-sm flex items-center justify-center flex-shrink-0"><img alt="Dock 71 Cantù" class="h-full w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLpgbvYOpsw4y4Es6pg9rdVJnA8JPZmBSjkAHgIpDH8__DfntsoTmcx2D7lkaDNH-GW5H8A5kyfYlzL-YZ04hA5yaKhAORfRzTLvh4XLBbuMP42s4-di_KmXN_F73p4VQichcyWLdtbCSeYn7mgSocwQ64FVUxZLJmD2vhCwtqlB4MlLwr7qWjyUIPvMupa6D7yyFwBQDz88aiOHm9D0Qecv4S3F3S7kgdxSpHBIfpHQobVb3RUFDCXjxEqvnbN_s_dIk"></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-[#1c1c19] uppercase tracking-wider font-bold">Dock 71</span><span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Cantù Wharf Gastropub</span></div></div><p class="font-body-sm text-body-sm text-[#554245] leading-relaxed">Autentico spirito British gastropub e calore conviviale nel cuore di Cantù. Spine artigianali selezionate, hamburger gourmet, pizza a lievitazione naturale e maxischermi per le migliori serate di sport in diretta.</p><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white border border-[#e2d9cc] w-fit shadow-sm"><span class="material-symbols-outlined text-[#7b2039] text-[18px]">local_dining</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-[#1c1c19] font-semibold">Cucina &amp; Pinta Sempre Pronte</span></div></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-[#1c1c19] uppercase tracking-widest font-bold">Navigazione</span><ul class="flex flex-col gap-2.5 font-label-md text-label-md"><li class="flex"><a class="text-on-surface-variant hover:text-[#7b2039] transition-colors" data-path="home" href="#">Home</a></li><li class="flex"><a class="text-on-surface-variant hover:text-[#7b2039] transition-colors" data-path="menu" href="#">Menù &amp; Birre</a></li><li class="flex"><a class="text-on-surface-variant hover:text-[#7b2039] transition-colors" data-path="galleria" href="#">Galleria</a></li><li class="flex"><a class="text-on-surface-variant hover:text-[#7b2039] transition-colors" data-path="esperienze" href="#">Da noi puoi... (Esperienze &amp; Sky Sport)</a></li><li class="flex"><a class="text-on-surface-variant hover:text-[#7b2039] transition-colors" data-path="contatti" href="#">Contatti &amp; Dove Siamo</a></li><li class="flex"><a class="text-[#7b2039] font-bold hover:underline transition-colors" data-path="prenotazione" href="#">Prenota un Tavolo</a></li></ul></div><div class="flex flex-col gap-3"><span class="font-label-lg text-label-lg text-[#1c1c19] uppercase tracking-widest font-bold">Dove Siamo &amp; Parcheggio</span><div class="flex items-start gap-2.5"><span class="material-symbols-outlined text-[#7b2039] text-[20px] mt-0.5">location_on</span><div class="font-body-sm text-body-sm"><span class="text-[#1c1c19] font-semibold block">Via Milano 71, 22063 Cantù (CO)</span><span class="text-[#554245] block mt-0.5">A pochi minuti dal centro storico</span><span class="text-[#7b2039] block mt-1 font-semibold">• Ampio parcheggio dedicato gratuito</span></div></div><div class="mt-2 pt-2 border-t border-[#e2d9cc]/60 flex flex-col gap-2"><a class="inline-flex items-center gap-2 font-body-sm text-body-sm text-[#1c1c19] hover:text-[#7b2039] font-semibold transition-colors" href="tel:0314487120"><span class="material-symbols-outlined text-[#7b2039] text-[18px]">call</span>031 4487120</a><a class="inline-flex items-center gap-2 font-body-sm text-body-sm text-[#1c1c19] hover:text-[#7b2039] transition-colors" href="https://wa.me/390314487120"><span class="material-symbols-outlined text-[#7b2039] text-[18px]">chat</span>WhatsApp Diretto Tavoli</a></div></div><div class="flex flex-col gap-4"><span class="font-label-lg text-label-lg text-[#1c1c19] uppercase tracking-widest font-bold">Orari &amp; Live Sport</span><div class="p-3.5 rounded-xl bg-white border border-[#e2d9cc] flex flex-col gap-2 shadow-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-[#1c1c19] font-bold uppercase tracking-wider">Lunedì – Domenica</span><span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#f1e1c0] text-[#6e6349]">Aperti 7/7</span></div><div class="font-body-sm text-body-sm text-[#554245] flex flex-col gap-0.5"><span class="">Pranzo: 12:00 – 14:30</span><span class="">Cena &amp; Pub: 18:30 – 01:00</span></div></div><div class="flex items-center gap-2.5"><a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white border border-[#e2d9cc] hover:bg-[#FAF7F2] flex items-center justify-center text-[#1c1c19] hover:text-[#7b2039] transition-colors shadow-sm" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" class="w-9 h-9 rounded-lg bg-white border border-[#e2d9cc] hover:bg-[#FAF7F2] flex items-center justify-center text-[#1c1c19] hover:text-[#7b2039] transition-colors shadow-sm" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="Recensioni TripAdvisor" class="w-9 h-9 rounded-lg bg-white border border-[#e2d9cc] hover:bg-[#FAF7F2] flex items-center justify-center text-[#1c1c19] hover:text-[#7b2039] transition-colors shadow-sm" href="#"><span class="material-symbols-outlined text-[18px]">reviews</span></a></div></div></div><div class="pt-8 mt-4 border-t border-[#e2d9cc] flex flex-col sm:flex-row items-center justify-between gap-4"><span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">© 2025 Dock 71 Cantù • Risto-Pub, Birreria &amp; Pizzeria. P.IVA 03144871201.</span><div class="flex items-center gap-6 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><a class="hover:text-[#7b2039] transition-colors" href="#">Privacy Policy</a><a class="hover:text-[#7b2039] transition-colors" href="#">Cookie Policy</a><a class="hover:text-[#7b2039] transition-colors" href="#">Termini</a></div></div></div></footer>
+
+</body></html>

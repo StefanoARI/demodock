@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#932846" />
+      <stop offset="100%" stop-color="#5C162A" />
+    </radialGradient>
+  </defs>
+  <!-- Outer Cream Badge Circle -->
+  <circle cx="64" cy="64" r="62" fill="#FFF9EB" stroke="#7B2039" stroke-width="4" />
+  <!-- Inner Burgundy Medallion -->
+  <circle cx="64" cy="64" r="54" fill="url(#bgGrad)" stroke="#E0A93B" stroke-width="3" />
+  <!-- Industrial Port Crane Silhouette -->
+  <g fill="none" stroke="#E0A93B" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Crane Base & Tower -->
+    <path d="M36 52 L44 26 L52 52" stroke-width="3" />
+    <line x1="39" y1="42" x2="49" y2="42" stroke-width="2" />
+    <line x1="41" y1="34" x2="47" y2="34" stroke-width="2" />
+    <!-- Crane Jib (Arm) -->
+    <path d="M32 30 L88 22 L44 26" stroke-width="3" />
+    <!-- Hook cable -->
+    <line x1="80" y1="24" x2="80" y2="38" stroke-width="2.2" />
+    <circle cx="80" cy="40" r="2.5" fill="#E0A93B" />
+    <!-- Horizon Dock Line -->
+    <line x1="26" y1="53" x2="102" y2="53" stroke-width="3" stroke="#FFF9EB" />
+  </g>
+  <!-- DOCK Text -->
+  <text
+    x="64"
+    y="78"
+    text-anchor="middle"
+    fill="#FFF9EB"
+    font-family="Impact, 'Arial Black', sans-serif"
+    font-weight="900"
+    font-size="24"
+    letter-spacing="1.5"
+  >
+    DOCK
+  </text>
+  <!-- 71 Accent Text -->
+  <text
+    x="64"
+    y="105"
+    text-anchor="middle"
+    fill="#E0A93B"
+    font-family="Impact, 'Arial Black', sans-serif"
+    font-weight="900"
+    font-size="28"
+    letter-spacing="1"
+  >
+    71
+  </text>
+</svg>

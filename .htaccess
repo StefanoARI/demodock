@@ -1,0 +1,60 @@
+# ==============================================================================
+# DOCK 71 CANTÙ - ROOT FALLBACK .HTACCESS PER LITESPEED / CPANEL
+# Se l'intero progetto viene caricato nella root di public_html senza estrarre
+# solo la cartella "produzione_cpanel", questo file reindirizza automaticamente
+# il server verso i file JavaScript compilati dentro /produzione_cpanel/ evitando
+# l'errore MIME type "application/octet-stream" su /src/main.tsx.
+# ==============================================================================
+
+AddDefaultCharset UTF-8
+Options -Indexes +FollowSymLinks
+
+<IfModule mod_mime.c>
+    AddType application/javascript .js .mjs
+    AddType text/javascript .js .mjs
+    AddType text/css .css
+    AddType application/json .json
+    AddType image/webp .webp
+    AddType image/avif .avif
+    AddType image/svg+xml .svg
+    AddType application/pdf .pdf
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Blocca accesso a file di configurazione o sorgenti TypeScript non compilati
+    RewriteRule ^(\.git|\.env|node_modules|package\.json|tsconfig\.json|\.cpanel\.yml) - [F,L]
+
+    # Se viene richiesto /backend/..., servi da /produzione_cpanel/backend/ o /public/backend/
+    RewriteCond %{REQUEST_URI} ^/backend/(.*)$
+    RewriteCond %{DOCUMENT_ROOT}/produzione_cpanel/backend/%1 -f
+    RewriteRule ^backend/(.*)$ /produzione_cpanel/backend/$1 [L,QSA]
+
+    # Se viene richiesto /assets/..., servi da /produzione_cpanel/assets/
+    RewriteCond %{REQUEST_URI} ^/assets/(.*)$
+    RewriteCond %{DOCUMENT_ROOT}/produzione_cpanel/assets/%1 -f
+    RewriteRule ^assets/(.*)$ /produzione_cpanel/assets/$1 [L]
+
+    # Se viene richiesto un file statico nella root (es. favicon, logo-dock71.png, site.webmanifest) presente in /produzione_cpanel/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/produzione_cpanel%{REQUEST_URI} -f
+    RewriteRule ^(.*)$ /produzione_cpanel/$1 [L]
+
+    # Se siamo nella root del repository e c'è la cartella produzione_cpanel,
+    # servi sempre l'index.html compilato (e MAI l'index.html di sviluppo che punta a /src/main.tsx)
+    RewriteCond %{REQUEST_URI} !^/produzione_cpanel/
+    RewriteCond %{DOCUMENT_ROOT}/produzione_cpanel/index.html -f
+    RewriteRule ^$ /produzione_cpanel/index.html [L]
+
+    RewriteCond %{REQUEST_URI} ^/index\.html$
+    RewriteCond %{DOCUMENT_ROOT}/produzione_cpanel/index.html -f
+    RewriteRule ^index\.html$ /produzione_cpanel/index.html [L]
+
+    # Fallback SPA verso /produzione_cpanel/index.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/produzione_cpanel/index.html -f
+    RewriteRule . /produzione_cpanel/index.html [L]
+</IfModule>

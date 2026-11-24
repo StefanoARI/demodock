@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="it"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.checker-ribbon{background-image:linear-gradient(45deg,#7b2039 25%,transparent 25%),linear-gradient(-45deg,#7b2039 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#7b2039 75%),linear-gradient(-45deg,transparent 75%,#7b2039 75%);background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0px;background-color:#fff9eb;}.checker-ribbon-secondary{background-image:linear-gradient(45deg,#336859 25%,transparent 25%),linear-gradient(-45deg,#336859 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#336859 75%),linear-gradient(-45deg,transparent 75%,#336859 75%);background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0px;background-color:#fff9eb;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#333027","on-secondary-fixed":"#002019","on-error":"#ffffff","on-error-container":"#93000a","outline-variant":"#dbc0c3","on-primary-fixed":"#3f0015","error-container":"#ffdad6","secondary-container":"#b4ebd8","primary-container":"#7b2039","surface-dim":"#dfdacc","background":"#fff9eb","primary":"#5d0624","outline":"#887174","secondary-fixed":"#b7eedb","surface":"#fff9eb","tertiary-fixed-dim":"#f5bd57","secondary":"#336859","surface-container":"#f3eddf","on-secondary-container":"#386c5d","on-secondary":"#ffffff","tertiary-container":"#5a3e00","surface-container-high":"#eee8da","inverse-on-surface":"#f6f0e2","surface-bright":"#fff9eb","secondary-fixed-dim":"#9bd2bf","on-primary":"#ffffff","on-tertiary-container":"#dca743","tertiary-fixed":"#ffdeaa","on-tertiary-fixed":"#271900","on-primary-container":"#ff8da3","tertiary":"#3d2900","on-tertiary":"#ffffff","inverse-primary":"#ffb2be","surface-variant":"#e8e2d4","surface-container-low":"#f9f3e5","surface-container-highest":"#e8e2d4","on-surface":"#1d1c13","on-secondary-fixed-variant":"#184f42","primary-fixed":"#ffd9de","on-surface-variant":"#554245","surface-tint":"#9f3c54","surface-container-lowest":"#ffffff","on-background":"#1d1c13","primary-fixed-dim":"#ffb2be","error":"#ba1a1a","on-tertiary-fixed-variant":"#5f4100","on-primary-fixed-variant":"#80243d"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-md":"1rem","space-2xl":"4rem","space-xl":"2.5rem","gutter":"1.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin":"2.5rem","margin-mobile":"1rem","space-sm":"0.5rem","gutter-mobile":"1rem"},fontFamily:{"label-lg":["Epilogue"],"body-md":["Epilogue"],"display-lg":["Epilogue"],"label-sm":["Epilogue"],"display-md-mobile":["Epilogue"],"headline-sm":["Epilogue"],"headline-md":["Epilogue"],"body-sm":["Epilogue"],"headline-lg":["Epilogue"],"display-lg-mobile":["Epilogue"],"label-md":["Epilogue"],"display-md":["Epilogue"],"body-lg":["Epilogue"]},fontSize:{"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.06em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg":["64px",{"lineHeight":"68px","letterSpacing":"-0.03em","fontWeight":"900"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"display-md-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"900"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}],"display-lg-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"900"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"700"}],"display-md":["48px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"900"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_4px_12px_rgba(29,28,19,0.06)]"><div class="w-full h-3 checker-ribbon"></div><div class="h-20 w-full px-gutter flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><img alt="Logo_Dock71_main version_trasparente.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uk_fiNyfMgMmsTJ2xjyEWhifk_MNOs42yl7A8c4V6Bma0_mnKCFHoDh94sB0Xhr7QeBZCAaPrk9NHtonrFtWYh1HxZO9rFPze277Jexg57drTSetGqNtHAe3Kjbbs8a7iBMW84SfG7A3gYqAk-DWfaX9iZYPF-X_p4-E0ELRw9Nh9-WPctWYS6g-FVa4UEkI9snrGmMrYxpAqCXFEwcwaUv1OHBBHqdPa0AjxPlYBFog-_W79vZ15l30I1Szx37zzxIIxTy3XWGJs"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary uppercase">DOCK 71</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Griglia, Malto &amp; Farina</span></div></div><nav class="hidden xl:flex items-center gap-6" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-1" data-path="home" href="#">HOME</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-1" data-path="menu-e-birre" href="#">MENÙ &amp; BIRRE</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-1" data-path="galleria" href="#">GALLERIA</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-1" data-path="da-noi-puoi" href="#">DA NOI PUOI...</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-1" data-path="prenota-tavolo" href="#">PRENOTA TAVOLO</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-1" data-path="contatti" href="#">CONTATTI</a></nav><div class="flex items-center gap-4 shrink-0"><a class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" href="tel:0314487120"><span class="material-symbols-outlined text-secondary text-[20px]">call</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant">TEL / WHATSAPP</span><span class="font-label-md text-label-md text-on-surface font-bold">031 4487120</span></div></a><a class="inline-flex items-center justify-center px-4 py-2 bg-primary-container text-on-primary font-label-lg text-label-lg tracking-wider uppercase rounded shadow-[2px_2px_0px_#1d1c13] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_#1d1c13] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all" data-path="prenota-tavolo" href="#">PRENOTA ORA</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Marquee Ticker -->
+<div class="w-full bg-inverse-surface text-surface py-2.5 px-gutter overflow-hidden flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-6 text-label-sm font-label-sm uppercase tracking-widest text-tertiary-fixed-dim whitespace-nowrap overflow-x-auto">
+<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> 14 SPINE ATTIVE OGGI</span>
+<span class="text-outline">/</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container"></span> CUCINA ATTIVA FINO A TARDA NOTTE</span>
+<span class="text-outline">/</span>
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">sports_soccer</span> SKY SPORT HD LIVE IN SALA</span>
+<span class="text-outline">/</span>
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">local_parking</span> 50+ POSTI AUTO RISERVATI GRATUITI</span>
+<span class="text-outline">/</span>
+<span class="inline-flex items-center gap-1.5 text-primary-fixed-dim">CANTÙ • VIA MILANO 71</span>
+</div>
+<a class="hidden lg:inline-flex items-center gap-1 text-label-sm font-label-sm text-surface uppercase font-bold shrink-0 hover:text-tertiary-fixed-dim transition-colors" href="tel:0314487120">
+<span class="material-symbols-outlined text-[14px]">call</span> TAVOLI: 031 4487120
+    </a>
+</div>
+<!-- Hero Banner with Checker Trim & Poster Atmosphere -->
+<section class="relative w-full bg-surface-container-low py-space-xl lg:py-space-2xl overflow-hidden">
+<div class="w-full h-3 checker-ribbon"></div>
+<div class="max-w-7xl mx-auto px-gutter py-space-lg lg:py-space-xl flex flex-col gap-space-lg">
+<!-- Stamp Badge & Sub-header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="inline-flex items-center gap-3">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex flex-col items-center justify-center p-1 text-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">anchor</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter leading-none mt-0.5">DOCK 71</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-widest font-extrabold">GUIDA COMPLETA AL MOLO</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Wharf Gastropub &amp; Craft House Cantù</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-2 self-start md:self-auto bg-surface px-4 py-2 rounded shadow-sm text-on-surface font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Zero coperto segreto • Ingredienti tracciati</span>
+</div>
+</div>
+<!-- Main Headline Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-display-lg text-display-lg text-primary uppercase font-black tracking-tight leading-none">
+            DA NOI PUOI...<br/>
+<span class="text-on-surface">VIVERE IL PUB</span><br/>
+<span class="text-secondary italic">COME PIACE A TE</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-space-sm">
+            Dock 71 non è solo un posto dove mangiare o bere. È un porto d'attracco caldo e rumoroso pensato per ogni momento della tua settimana: dal pranzo smart di lavoro alle battaglie di Champions League, dai compleanni con giro-pizza alle chiacchiere fino alle due di notte davanti a una pinta a pompa.
+          </p>
+</div>
+<!-- Poster Style Floating Pill Box (Visual Richness from Brand Visuals) -->
+<div class="lg:col-span-4 bg-primary text-on-primary p-space-lg rounded shadow-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-primary-container/40 pointer-events-none"></div>
+<div class="flex flex-col gap-2 relative z-10">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-widest font-bold">IL MANIFESTO DOCK 71</span>
+<span class="font-headline-lg text-headline-lg font-black tracking-tight uppercase leading-tight text-surface">
+              MALTO, GRIGLIA &amp; ROCK'N'ROLL
+            </span>
+<p class="font-body-sm text-body-sm text-surface-variant/90 mt-1">
+              “Il peccato è non venire. Il rimedio è ordinare un doppio smash burger e una pinta fresca.”
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-tertiary-fixed text-label-md font-label-md uppercase">
+<span>Cantù (CO) • Molo 71</span>
+<span class="material-symbols-outlined text-[20px]">sports_bar</span>
+</div>
+</div>
+</div>
+<!-- Quick Interactive Scroll Anchor Bar -->
+<div class="w-full bg-surface-container p-2 rounded shadow-sm overflow-x-auto">
+<div class="flex items-center gap-2 min-w-max">
+<a class="px-3 py-1.5 rounded bg-surface hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#esperienza-1">
+<span class="material-symbols-outlined text-[16px] text-primary">local_pizza</span> Pizze &amp; Carni
+          </a>
+<a class="px-3 py-1.5 rounded bg-surface hover:bg-secondary hover:text-on-secondary text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#esperienza-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">sports_bar</span> 14 Spine Artigianali
+          </a>
+<a class="px-3 py-1.5 rounded bg-surface hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#esperienza-3">
+<span class="material-symbols-outlined text-[16px] text-primary">tv</span> Sky Sport HD Live
+          </a>
+<a class="px-3 py-1.5 rounded bg-surface hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#esperienza-4">
+<span class="material-symbols-outlined text-[16px] text-secondary">celebration</span> Feste Private &amp; 18esimi
+          </a>
+<a class="px-3 py-1.5 rounded bg-surface hover:bg-secondary hover:text-on-secondary text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#esperienza-5">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span> Cene Aziendali
+          </a>
+<a class="px-3 py-1.5 rounded bg-surface hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#esperienza-6">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span> Pranzo Smart 35min
+          </a>
+<a class="px-3 py-1.5 rounded bg-surface hover:bg-inverse-surface hover:text-surface text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#esperienza-7">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">liquor</span> Dopocena al Bancone
+          </a>
+</div>
+</div>
+</div>
+<div class="w-full h-3 checker-ribbon-secondary"></div>
+</section>
+<!-- Big Counter & Vibe Metrics Bar -->
+<section class="w-full bg-surface-container-high py-space-lg px-gutter shadow-sm">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="p-space-md bg-surface rounded flex flex-col gap-1 shadow-sm">
+<span class="font-display-md text-display-md text-primary font-black leading-none">48h</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Lievitazione Pizze</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Farine integrali macinate a pietra</span>
+</div>
+<div class="p-space-md bg-surface rounded flex flex-col gap-1 shadow-sm">
+<span class="font-display-md text-display-md text-secondary font-black leading-none">14</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Spine in Rotazione</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pompe inglesi reali &amp; isobariche</span>
+</div>
+<div class="p-space-md bg-surface rounded flex flex-col gap-1 shadow-sm">
+<span class="font-display-md text-display-md text-tertiary-container font-black leading-none">3</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Maxischermi 4K</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Audio multi-zona zero angoli ciechi</span>
+</div>
+<div class="p-space-md bg-surface rounded flex flex-col gap-1 shadow-sm">
+<span class="font-display-md text-display-md text-primary font-black leading-none">35'</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Garanzia Pranzo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tavolo servito o caffè omaggio</span>
+</div>
+</div>
+</section>
+<!-- THE 7 GREAT EXPERIENCES (Le 7 Grandi Esperienze del Molo) -->
+<section class="w-full py-space-2xl px-gutter max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Introduction Header -->
+<div class="flex flex-col items-center text-center gap-space-xs max-w-3xl mx-auto">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm uppercase tracking-widest font-extrabold shadow-sm">
+        FORMAT &amp; OCCASIONI D'USO
+      </span>
+<h2 class="font-display-md text-display-md text-on-surface uppercase font-black tracking-tight">
+        TUTTO CIÒ CHE TI ATTENDE AL MOLO
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Dai sapori veraci della griglia alle notti scatenate con birre d'eccellenza, abbiamo costruito ogni spazio di Dock 71 con uno scopo preciso: farti sentire nel posto giusto, in qualsiasi giorno dell'anno.
+      </p>
+</div>
+<!-- EXPERIENCE 1: Pizza & Grill -->
+<article class="w-full bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-md flex flex-col lg:flex-row gap-space-xl items-center relative overflow-hidden" id="esperienza-1">
+<div class="w-full lg:w-1/2 flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-black">01</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded uppercase tracking-wider font-bold">
+            GRIGLIA &amp; FARINA
+          </span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-black tracking-wider">
+            “Il Piacere è Tutto Vostro”
+          </span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase font-extrabold leading-tight">
+          Gustare la Vera Pizza a Lenta Lievitazione (48h) e Carni alla Brace
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Nessuna scorciatoia. I nostri impasti riposano minimo 48 ore a temperatura controllata per assicurare digeribilità assoluta, cornicione alveolato e fragranza unica, con farine biologiche macinate a pietra. Sulla griglia a pietra lavica sfrigolano tagli selezionati di Black Angus frollati oltre 30 giorni e i leggendari Smash Burger con crosticina croccante Maillard.
+        </p>
+<!-- Feature Points -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-2">
+<div class="flex items-start gap-2 bg-surface-container p-3 rounded">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">done_all</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface uppercase font-bold">Lievitazione 48 Ore</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Digeribilità garantita &amp; zero sete notturna</span>
+</div>
+</div>
+<div class="flex items-start gap-2 bg-surface-container p-3 rounded">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">local_fire_department</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface uppercase font-bold">Black Angus &amp; Brace</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Frollatura minima 30gg su pietra lavica</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-space-xs">
+<a class="px-5 py-2.5 bg-primary text-on-primary rounded font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-md hover:bg-primary-container transition-colors inline-flex items-center gap-2" data-path="menu-e-birre" href="#">
+            SFOGLIA IL MENÙ COMPLETO <span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Consigliato: Abbinamento con Red Ale ambrata</span>
+</div>
+</div>
+<!-- Experience Image Placeholder -->
+<div class="w-full lg:w-1/2 flex flex-col gap-3">
+<div class="relative w-full h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Close-up gourmet photo of a wood-fired artisanal pizza with blistered airy crust alongside a sizzling Black Angus beef steak on warm wooden board, rustic gastropub lighting with amber highlights and deep burgundy background, high contrast tactile culinary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc4FYbvnateXHP87Jto-WB0CCg7BV__qXoa6eBouiGT45tHJljvYrntrHBCC3naIOmDjgm0hhrwCc3cj8GG9WXzvUW0UMf6l2o0Syh-4enlC_5euUIk-Ynr7Kr6QRTYwOrvk3OAyYvsqG5qDqxYUa5vioANphgtwH6VUL-_sSilYyM7qS8DTQ_WAWva9zGzmemnWE1SjnBlIA31sQWroyTn1_5J88VeDciVxW18PUkqEaHlKkPxXtvHQ"/>
+<div class="absolute bottom-4 left-4 bg-inverse-surface/90 text-surface px-4 py-2 rounded backdrop-blur-sm flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">stars</span>
+<span class="font-label-sm text-label-sm uppercase font-extrabold tracking-wider">TOP SELLER: SMASH BURGER DEL MOLO</span>
+</div>
+</div>
+</div>
+</article>
+<!-- EXPERIENCE 2: 14 Taps Craft Beer -->
+<article class="w-full bg-surface-container-high rounded-xl p-space-lg lg:p-space-xl shadow-md flex flex-col-reverse lg:flex-row gap-space-xl items-center relative overflow-hidden" id="esperienza-2">
+<!-- Image Left -->
+<div class="w-full lg:w-1/2 flex flex-col gap-3">
+<div class="relative w-full h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A vintage brass and industrial steel pub draught beer tower with 14 active tap handles, pouring a foamy golden IPA craft beer into a branded glass, moody tavern lighting with warm deep green and dark amber tones, gastropub atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBszDT_2df3ukOx8xg1jN4DcDt4CZr8pv63Jo2fzabFxAlrlc-ku5qjx-kEWIe6Bo6XH-hJJqMFtLfIr72r8KDShiu0qjfRNBdqHWNDk0Mu61iv38DoMiQJz72LgaNNIP8EOoeZmh9IrS08N-RRvBJ48fr8bPN24EPex2w1FL9A5ELR65sN68khOAhci1uEF_VT6SJndyECOuSGgnFZI0Mxs9HnJQKDYuC_5xXS-xYa-WTZcsiX9EwhmA"/>
+<div class="absolute top-4 left-4 bg-secondary text-on-secondary px-3.5 py-1.5 rounded font-label-sm text-label-sm uppercase tracking-wider font-extrabold shadow-md">
+            GOOD BEER, GREAT FOOD
+          </div>
+</div>
+</div>
+<!-- Content Right -->
+<div class="w-full lg:w-1/2 flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-sm text-headline-sm font-black">02</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-3 py-1 rounded uppercase tracking-wider font-bold">
+            TAPROOM MOLO
+          </span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-black tracking-wider">
+            14 VIE ATTIVE
+          </span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase font-extrabold leading-tight">
+          Esplorare 14 Vie di Birra Artigianale &amp; Tradizionale
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Non troverai le solite bionde industriali omologate. Il nostro banco ospita autentiche pompe inglesi “hand-pull” senza spinta di anidride carbonica forzata per goderti le cask ale a temperatura di cantina, oltre a spine isobariche con birre bavaresi non filtrate, tripel belghe d'abbazia e NEIPA fresche di luppolo.
+        </p>
+<!-- Tap Features List -->
+<div class="flex flex-col gap-2 bg-surface p-space-md rounded shadow-sm">
+<div class="flex items-center justify-between text-on-surface pb-2 border-b border-surface-variant">
+<span class="font-label-md text-label-md uppercase font-bold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span> Percorso “Il Giro Delle Spine”
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">4 ASSAGGI GUIDATI DA 15CL</span>
+</div>
+<div class="flex items-center justify-between text-on-surface pb-2 border-b border-surface-variant">
+<span class="font-label-md text-label-md uppercase font-bold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Pompe Inglesi Tradizionali
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero gas forzato • Vellutata</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md uppercase font-bold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Microbirrifici di Brianza &amp; Mondo
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rotazione settimanale costante</span>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-space-xs">
+<a class="px-5 py-2.5 bg-secondary text-on-secondary rounded font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors inline-flex items-center gap-2" data-path="menu-e-birre" href="#">
+            VEDI TAP LIST LIVE <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lavaggio linee ogni 7 giorni certificato</span>
+</div>
+</div>
+</article>
+<!-- EXPERIENCE 3: Sky Sport HD -->
+<article class="w-full bg-inverse-surface text-surface rounded-xl p-space-lg lg:p-space-xl shadow-xl flex flex-col lg:flex-row gap-space-xl items-center relative overflow-hidden" id="esperienza-3">
+<div class="w-full lg:w-1/2 flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-headline-sm text-headline-sm font-black">03</span>
+<span class="font-label-sm text-label-sm bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded uppercase tracking-wider font-bold">
+            SKY SPORT HD ARENA
+          </span>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-black tracking-wider">
+            NESSUN ANGOLO CIECO
+          </span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-surface uppercase font-extrabold leading-tight">
+          Guardare TUTTO lo Sport Live su Tre Schermi Giganti Sky Sport HD
+        </h3>
+<p class="font-body-md text-body-md text-surface-variant">
+          Serie A, Champions League, Formula 1, MotoGP, Sei Nazioni di rugby e l'Eurolega di Basket: al Dock 71 ogni grande evento si vive come se fossi in curva o a bordo pista. I nostri 3 schermi giganti HD sono posizionati con uno studio visivo a 360°, accompagnati da un sistema audio multizona che ti fa sentire ogni coro da stadio o rombo di motore.
+        </p>
+<!-- Sports Specs Graphic -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+<div class="bg-surface/10 p-3 rounded backdrop-blur-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-tertiary-fixed text-[22px]">sports_soccer</span>
+<span class="font-label-md text-label-md text-surface font-bold uppercase">Calcio &amp; Coppe</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Tutte le partite in chiaro HD</span>
+</div>
+<div class="bg-surface/10 p-3 rounded backdrop-blur-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[22px]">sports_motorsports</span>
+<span class="font-label-md text-label-md text-surface font-bold uppercase">F1 &amp; Moto GP</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Qualifiche e gare della domenica</span>
+</div>
+<div class="bg-surface/10 p-3 rounded backdrop-blur-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">sports_rugby</span>
+<span class="font-label-md text-label-md text-surface font-bold uppercase">Rugby &amp; Basket</span>
+<span class="font-body-sm text-body-sm text-surface-variant">6 Nazioni &amp; Playoff canturini</span>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-space-xs">
+<a class="px-5 py-2.5 bg-primary-container text-on-primary rounded font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-md hover:bg-primary transition-colors inline-flex items-center gap-2" data-path="prenota-tavolo" href="#">
+            PRENOTA POSTO PER LA PARTITA <span class="material-symbols-outlined text-[18px]">event_seat</span>
+</a>
+<span class="font-label-sm text-label-sm text-surface-variant">Prenotazione anticipata consigliata per i big match</span>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col gap-3">
+<div class="relative w-full h-80 lg:h-96 rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Vibrant lively British-Italian gastropub interior during a major football match, supporters cheering at big high definition screens mounted on brick walls, pints of amber beer on wooden tables, warm atmospheric pub lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0OxtOgHB8N8cwGl4RIXQZvsx81xyZDuB-yArCGJ1K-8M1wOF3GlkgQ2agAAB2duWhC_61eg8wOtAokjQEmn9XEfTqCoIbwz4XwO3GS-kMw9zu_Rjtwo2PewMeDUgfltNLZXL7qwX71qDCkOpNDIAGdJ7iPrn2cxgAHN_jvwkqicc1GN6LdVnajJklHf9BD_afkYzfuE_XYG3d7HmZB9cPVWezjA1jZ1EfKPK4WfXP6V5w-FSBkpvKXA"/>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded shadow-md font-label-sm text-label-sm uppercase font-bold flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+            SCHERMI ATTIVI TUTTI I GIORNI
+          </div>
+</div>
+</div>
+</article>
+<!-- EXPERIENCE 4 & 5 Bento Row (Feste Private & Cene Aziendali) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- EXPERIENCE 4: Feste Private -->
+<article class="bg-surface-container-low rounded-xl p-space-lg lg:p-space-xl shadow-md flex flex-col justify-between gap-space-md relative overflow-hidden" id="esperienza-4">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-black text-[16px]">04</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2.5 py-0.5 rounded uppercase font-bold">FESTE PRIVATE</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-black uppercase">DA 10 A 80 PERSONE</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase font-extrabold leading-tight">
+            Organizzare Feste Private &amp; Compleanni Esclusivi
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Diciottesimi senza ingessature, feste di laurea indimenticabili, addii al celibato o ritrovi storici di classe: al Dock 71 la festa è festa vera. Mettiamo a disposizione l'esclusiva <strong>Sala Gru</strong> o la veranda panoramica, formule giro-pizza no-stop, birra artigianale a caraffe e gestione del taglio torta con spumante.
+          </p>
+<div class="bg-surface p-space-md rounded shadow-sm flex flex-col gap-2 mt-2">
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">COSA INCLUDE IL PACCHETTO FESTE:</span>
+<ul class="flex flex-col gap-1.5 text-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Giro-pizza illimitato con 6 gusti a rotazione continua</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Antipasti fritti caldi della banchina (chips artigianali, polpette)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Playlist personalizzabile o possibilità di DJ-set concordato</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Servizio torta senza sovrapprezzo ridicolo</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-surface-variant">
+<a class="px-4 py-2 bg-primary text-on-primary rounded font-label-md text-label-md uppercase tracking-wider font-bold shadow-md hover:bg-primary-container transition-colors inline-flex items-center gap-1.5" data-path="prenota-tavolo" href="#">
+            RICHIEDI PREVENTIVO FESTA <span class="material-symbols-outlined text-[16px]">celebration</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Spazio bimbi / Area dedicata</span>
+</div>
+</article>
+<!-- EXPERIENCE 5: Cene Aziendali -->
+<article class="bg-surface-container rounded-xl p-space-lg lg:p-space-xl shadow-md flex flex-col justify-between gap-space-md relative overflow-hidden" id="esperienza-5">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-sm text-headline-sm font-black text-[16px]">05</span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2.5 py-0.5 rounded uppercase font-bold">AZIENDE &amp; TEAM</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-black uppercase">FATTURA ELETTRONICA SDI</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-secondary uppercase font-extrabold leading-tight">
+            Fare Cene Aziendali &amp; Team Building Informali
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Basta cene aziendali silenziose e noiose in ristoranti formali. Porta il tuo gruppo di lavoro dove ci si diverte, si mangia carne alla griglia di prim'ordine e si brinda insieme. Proponiamo menù a prezzo fisso concordato a persona con bevande incluse, zero sorprese sullo scontrino e possibilità di proiettare video di fine anno sui nostri maxischermi.
+          </p>
+<div class="bg-surface p-space-md rounded shadow-sm flex flex-col gap-2 mt-2">
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">VANTAGGI PER LE IMPRESE DI CANTÙ &amp; COMO:</span>
+<ul class="flex flex-col gap-1.5 text-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span> Menù concordato da 25€ a 45€ tutto compreso</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">receipt_long</span> Fatturazione elettronica immediata con codice SDI / PEC</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">devices</span> Collegamento HDMI / AirPlay per presentazioni e saluti</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">directions_car</span> Ampio parcheggio privato per tutti i dipendenti</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-surface-variant">
+<a class="px-4 py-2 bg-secondary text-on-secondary rounded font-label-md text-label-md uppercase tracking-wider font-bold shadow-md hover:bg-on-secondary-container transition-colors inline-flex items-center gap-1.5" data-path="contatti" href="#">
+            PACCHETTI AZIENDALI <span class="material-symbols-outlined text-[16px]">business_center</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Referente dedicato al molo</span>
+</div>
+</article>
+</div>
+<!-- EXPERIENCE 6 & 7 Bento Row (Pausa Pranzo Smart & Dopocena Cocktails) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- EXPERIENCE 6: Pranzo di Lavoro Smart (col-span 7) -->
+<article class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg lg:p-space-xl shadow-md flex flex-col justify-between gap-space-md" id="esperienza-6">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-black text-[16px]">06</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-0.5 rounded uppercase font-bold">LUNEDÌ - VENERDÌ 12:00 - 14:30</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary text-on-secondary px-2.5 py-0.5 rounded uppercase font-bold">GARANZIA 35 MINUTI</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase font-extrabold leading-tight">
+            Pausa Pranzo di Lavoro Smart e Veloce
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Lavori a Cantù, Mariano Comense o nei distretti del mobile? La tua pausa pranzo merita gusto e zero perdite di tempo. Piatti espressi preparati ogni mattina dai nostri cuochi: pasta fresca, tagliate veloci, insalatone ricche, burger leggeri e pizze al piatto con la nostra formula garantita in 35 minuti.
+          </p>
+<!-- Price Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-2">
+<div class="bg-surface p-space-md rounded shadow-sm flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface uppercase font-bold">MENU PRIMO</span>
+<span class="font-headline-md text-headline-md text-primary font-black">12€</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Primo del giorno + Acqua microfiltrata + Pane fatto in casa + Caffè espresso</span>
+</div>
+<div class="bg-surface p-space-md rounded shadow-sm flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface uppercase font-bold">MENU SECONDO / PIZZA</span>
+<span class="font-headline-md text-headline-md text-secondary font-black">14€</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Secondo alla griglia o Pizza classica + Contorno + Acqua + Caffè espresso</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-surface-variant">
+<div class="flex items-center gap-2 text-on-surface font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-secondary text-[18px]">wifi</span> Wi-Fi ultraveloce per laptop
+          </div>
+<a class="px-4 py-2 bg-primary-container text-on-primary rounded font-label-md text-label-md uppercase tracking-wider font-bold shadow-md hover:bg-primary transition-colors inline-flex items-center gap-1.5" href="tel:0314487120">
+            PRENOTA PRANZO SMART <span class="material-symbols-outlined text-[16px]">call</span>
+</a>
+</div>
+</article>
+<!-- EXPERIENCE 7: Dopocena Bancone (col-span 5) -->
+<article class="lg:col-span-5 bg-inverse-surface text-surface rounded-xl p-space-lg lg:p-space-xl shadow-xl flex flex-col justify-between gap-space-md relative overflow-hidden" id="esperienza-7">
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-headline-sm text-headline-sm font-black text-[16px]">07</span>
+<span class="font-label-sm text-label-sm bg-tertiary-container text-on-tertiary-container px-2.5 py-0.5 rounded uppercase font-bold">FINO ALLE 02:00</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-black uppercase">IL BANCONE</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-surface uppercase font-extrabold leading-tight">
+            Bere Bene la Sera &amp; Dopocena al Bancone
+          </h3>
+<p class="font-body-md text-body-md text-surface-variant">
+            La notte al Molo comincia quando gli altri chiudono la serranda. Un bancone in legno massello lungo oltre 10 metri dove gustare oltre 30 referenze di Gin premium botanici, amari d'erbe lombardi, whiskey torbati e cocktail classici miscelati a regola d'arte, con stuzzichini caldi dalla cucina sempre accesa.
+          </p>
+<div class="flex flex-col gap-2 bg-surface/10 p-3 rounded backdrop-blur-sm mt-1">
+<div class="flex justify-between items-center text-label-md font-label-md uppercase">
+<span class="text-surface font-bold">Gin &amp; Botaniche</span>
+<span class="text-tertiary-fixed font-black">30+ Etichette</span>
+</div>
+<div class="flex justify-between items-center text-label-md font-label-md uppercase">
+<span class="text-surface font-bold">Amari &amp; Bitter Artigianali</span>
+<span class="text-tertiary-fixed font-black">Selezione Locale</span>
+</div>
+<div class="flex justify-between items-center text-label-md font-label-md uppercase">
+<span class="text-surface font-bold">Snack Notturni dalla Friggitrice</span>
+<span class="text-tertiary-fixed font-black">Sempre Attivi</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between border-t border-surface/20 relative z-10">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase font-bold">Zero prenotazione richiesta per il bancone</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">local_bar</span>
+</div>
+</article>
+</div>
+</section>
+<!-- LOGISTICS & COMFORT PILLARS SECTION -->
+<section class="w-full bg-surface-container py-space-2xl px-gutter shadow-inner">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-black uppercase tracking-widest">PERCHÉ DOCK 71 È COSÌ COMODO</span>
+<h2 class="font-display-md text-display-md text-on-surface uppercase font-black tracking-tight leading-tight">
+            ZERO STRESS, SOLO DIVERTIMENTO
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Non devi impazzire a cercare parcheggio per 40 minuti o preoccuparti di gradini insormontabili. Abbiamo curato l'accessibilità in ogni dettaglio.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Pillar 1: Parking -->
+<div class="bg-surface rounded-xl p-space-lg shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">local_parking</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase font-extrabold">
+            Parcheggio Gratuito 50+ Posti
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Un piazzale riservato e illuminato proprio davanti all'ingresso del gastropub in Via Milano 71. Niente strisce blu, niente multe e niente lunghe camminate al freddo.
+          </p>
+<span class="mt-auto pt-space-xs font-label-sm text-label-sm text-secondary uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> Posti riservati disabili adiacenti all'ingresso
+          </span>
+</div>
+<!-- Pillar 2: Accessibility & Family -->
+<div class="bg-surface rounded-xl p-space-lg shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">accessible_forward</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-secondary uppercase font-extrabold">
+            100% Accessibile &amp; Family Friendly
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Locale interamente a piano terra, privo di barriere architettoniche per carrozzine e passeggini. Disponiamo di seggioloni per bambini e bagni ampi e attrezzati.
+          </p>
+<span class="mt-auto pt-space-xs font-label-sm text-label-sm text-primary uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> Animali ammessi con ciotola d'acqua fresca
+          </span>
+</div>
+<!-- Pillar 3: Fast Wi-Fi & Work Friendly -->
+<div class="bg-surface rounded-xl p-space-lg shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">wifi</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-extrabold">
+            Fibra Ultraveloce &amp; Smart Working
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Wi-Fi Gigabit gratuito su tutta l'area del locale e prese elettriche disponibili ai tavoli per chi vuole fare un meeting informale o continuare a lavorare a pranzo.
+          </p>
+<span class="mt-auto pt-space-xs font-label-sm text-label-sm text-secondary uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> Spazio tranquillo nelle fasce 12:00 - 15:00
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE SECTION: "Trova la Tua Serata Ideale al Molo" Widget -->
+<section class="w-full py-space-2xl px-gutter max-w-7xl mx-auto">
+<div class="bg-surface-container-low rounded-2xl p-space-lg lg:p-space-xl shadow-lg flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-black uppercase tracking-wider">CONFIGURATORE RAPIDO</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase font-black">
+            NON SAI COSA SCEGLIERE? TROVA IL TUO TAVOLO
+          </h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Seleziona chi sei stasera:</span>
+</div>
+<!-- Quick Interactive Filter Pills -->
+<div class="flex flex-wrap gap-2" id="vibe-selector">
+<button class="vibe-btn active px-4 py-2 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm transition-all" data-vibe="coppia" type="button">
+          In Coppia / Due Amici
+        </button>
+<button class="vibe-btn px-4 py-2 rounded bg-surface hover:bg-surface-variant text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm transition-all" data-vibe="gruppo" type="button">
+          Tavolata di Amici (6+ pax)
+        </button>
+<button class="vibe-btn px-4 py-2 rounded bg-surface hover:bg-surface-variant text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm transition-all" data-vibe="sport" type="button">
+          Voglio la Partita Live
+        </button>
+<button class="vibe-btn px-4 py-2 rounded bg-surface hover:bg-surface-variant text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm transition-all" data-vibe="veloce" type="button">
+          Solo una Pinta al Volo
+        </button>
+</div>
+<!-- Dynamic Response Card -->
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md transition-all" id="vibe-result">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]" id="result-icon">favorite</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary uppercase font-bold" id="result-title">LA FORMULA PERFETTA: TAVOLO CANDELA &amp; DEGUSTAZIONE</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1" id="result-desc">
+              Tavolo tranquillo in Sala Molo con menù Pizza Contemporanea o Grigliata mista, abbinato al percorso “Giro delle Spine” per assaggiare 4 stili di birra differenti.
+            </p>
+</div>
+</div>
+<a class="shrink-0 px-5 py-2.5 bg-primary text-on-primary rounded font-label-md text-label-md uppercase tracking-wider font-bold shadow-md hover:bg-primary-container transition-colors inline-flex items-center gap-1.5" data-path="prenota-tavolo" href="#">
+          PRENOTA QUESTO TAVOLO <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- FINAL CALL TO ACTION: THE DOCK CALLS WITH CHECKER FRAME -->
+<section class="w-full bg-primary text-on-primary py-space-2xl px-gutter relative overflow-hidden shadow-2xl">
+<div class="w-full h-3 checker-ribbon absolute top-0 left-0"></div>
+<div class="max-w-5xl mx-auto py-space-lg flex flex-col items-center text-center gap-space-lg relative z-10">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[32px]">anchor</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-widest font-extrabold">IL TUO POSTO AL MOLO</span>
+<h2 class="font-display-md text-display-md text-surface uppercase font-black tracking-tight leading-tight">
+          QUALUNQUE SIA IL TUO PIANO PER STASERA, C'È UN POSTO CHE TI ASPETTA
+        </h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto mt-2">
+          I tavoli nei weekend e durante le serate di Champions League volano in fretta. Blocca il tuo posto in un click oppure scrivici direttamente su WhatsApp per richieste speciali o grandi compagnie.
+        </p>
+</div>
+<!-- Action Buttons Pair -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 bg-tertiary-fixed text-on-tertiary-fixed rounded font-label-lg text-label-lg uppercase tracking-wider font-black shadow-lg hover:bg-tertiary-fixed-dim hover:translate-y-[-2px] active:translate-y-[0px] transition-all inline-flex items-center justify-center gap-2" data-path="prenota-tavolo" href="#">
+          PRENOTA IL TUO TAVOLO ORA <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-4 bg-secondary text-on-secondary rounded font-label-lg text-label-lg uppercase tracking-wider font-black shadow-lg hover:bg-on-secondary-container hover:translate-y-[-2px] active:translate-y-[0px] transition-all inline-flex items-center justify-center gap-2" href="https://wa.me/390314487120" rel="noopener noreferrer" target="_blank">
+          SCRIVICI SU WHATSAPP <span class="material-symbols-outlined text-[20px]">chat</span>
+</a>
+</div>
+<!-- Micro Badges -->
+<div class="flex flex-wrap items-center justify-center gap-6 text-label-sm font-label-sm text-surface-variant uppercase mt-2">
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed">done</span> Conferma Immediata via SMS</span>
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed">done</span> Nessuna Carta Richiesta</span>
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed">done</span> Parcheggio Riservato Incluso</span>
+</div>
+</div>
+<div class="w-full h-3 checker-ribbon-secondary absolute bottom-0 left-0"></div>
+</section>
+<!-- Interactive JavaScript for the Vibe Selector Widget -->
+<script>
+    (function() {
+      const vibeData = {
+        'coppia': {
+          icon: 'favorite',
+          title: 'FORMULA IN COPPIA / DUE AMICI',
+          desc: 'Tavolo tranquillo in Sala Molo con menù Pizza Contemporanea o Grigliata mista, abbinato al percorso “Giro delle Spine” per assaggiare 4 stili di birra differenti.'
+        },
+        'gruppo': {
+          icon: 'groups',
+          title: 'FORMULA TAVOLATA DI AMICI & FESTA',
+          desc: 'Tavoli spaziosi in Sala Gru con caraffe di birra artigianale a fiumi, giro-pizza no-stop e taglieri con fritti caldi della banchina da condividere.'
+        },
+        'sport': {
+          icon: 'sports_soccer',
+          title: 'POSTO IN PRIMA FILA MAXISCHERMO SKY HD',
+          desc: 'Posto con visibilità diretta su uno dei tre maxischermi giganti, audio live dello stadio, burger con patatine e birra servita durante l’intervallo.'
+        },
+        'veloce': {
+          icon: 'local_bar',
+          title: 'AL BANCONE DEL MOLO SENZA PRENOTAZIONE',
+          desc: 'Siediti direttamente al bancone da 10 metri: fatti consigliare l’ultima IPA arrivata dal mastro spillatore e ordina un fritto caldo senza attese.'
+        }
+      };
+
+      const buttons = document.querySelectorAll('.vibe-btn');
+      const titleElem = document.getElementById('result-title');
+      const descElem = document.getElementById('result-desc');
+      const iconElem = document.getElementById('result-icon');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          buttons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'active');
+            b.classList.add('bg-surface', 'text-on-surface');
+          });
+          this.classList.remove('bg-surface', 'text-on-surface');
+          this.classList.add('bg-primary', 'text-on-primary', 'active');
+
+          const vibeKey = this.getAttribute('data-vibe');
+          const data = vibeData[vibeKey];
+          if (data && titleElem && descElem && iconElem) {
+            titleElem.textContent = data.title;
+            descElem.textContent = data.desc;
+            iconElem.textContent = data.icon;
+          }
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-high border-t-2 border-primary/20"><div class="w-full h-3 checker-ribbon-secondary"></div><div class="w-full px-gutter py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-3"><img alt="Logo_Dock71_main version_trasparente.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uk_fiNyfMgMmsTJ2xjyEWhifk_MNOs42yl7A8c4V6Bma0_mnKCFHoDh94sB0Xhr7QeBZCAaPrk9NHtonrFtWYh1HxZO9rFPze277Jexg57drTSetGqNtHAe3Kjbbs8a7iBMW84SfG7A3gYqAk-DWfaX9iZYPF-X_p4-E0ELRw9Nh9-WPctWYS6g-FVa4UEkI9snrGmMrYxpAqCXFEwcwaUv1OHBBHqdPa0AjxPlYBFog-_W79vZ15l30I1Szx37zzxIIxTy3XWGJs"/><span class="font-headline-sm text-headline-sm text-primary uppercase">DOCK 71</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Wharf Gastropub, Risto-Pub, Pizzeria &amp; Birreria Artigianale a Cantù. Carni alla griglia, smash burger, pizze a lunga lievitazione e spine artigianali in rotazione continua.</p><div class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded font-label-sm text-label-sm uppercase font-bold w-fit shadow-[1px_1px_0px_#1d1c13]"><span class="material-symbols-outlined text-[16px]">tv</span>SKY SPORT HD LIVE MATCHES</div></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">NAVIGAZIONE MOLO</h3><div class="flex flex-col gap-space-xs"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home Molo</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="menu-e-birre" href="#">Menù &amp; Selezione Birre Tap</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="galleria" href="#">Galleria del Locale &amp; Piatti</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="da-noi-puoi" href="#">Da Noi Puoi... Esperienze &amp; Feste</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="prenota-tavolo" href="#">Prenota Tavolo &amp; Grandi Tavolate</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="contatti" href="#">Contatti &amp; Dove Siamo</a></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">ORARI &amp; SERVIZIO</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex justify-between py-1 border-b border-outline-variant/30"><span>Lunedì - Giovedì</span><span class="font-bold text-on-surface">18:30 - 01:00</span></div><div class="flex justify-between py-1 border-b border-outline-variant/30"><span>Venerdì - Sabato</span><span class="font-bold text-on-surface">18:30 - 02:00</span></div><div class="flex justify-between py-1 border-b border-outline-variant/30"><span>Domenica</span><span class="font-bold text-on-surface">18:00 - 00:30</span></div><p class="mt-2 font-label-sm text-label-sm text-secondary font-bold uppercase">Cucina attiva fino a tarda notte</p></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">PORTO DI CANTÙ</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">location_on</span>Via Milano, 71 - 22063 Cantù (CO)</p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span>031 4487120</p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">mail</span>info@dock71cantu.it</p></div><div class="flex items-center gap-3 mt-space-sm"><a aria-label="Instagram" class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary transition-colors shadow-[1px_1px_0px_#1d1c13]" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Facebook" class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary transition-colors shadow-[1px_1px_0px_#1d1c13]" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a aria-label="WhatsApp" class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary transition-colors shadow-[1px_1px_0px_#1d1c13]" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a></div></div></div><div class="mt-space-2xl pt-space-lg border-t border-outline-variant/40 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Dock 71 Cantù. Wharf Gastropub &amp; Craft Taproom. Tutti i diritti riservati.</p><div class="flex gap-6 font-label-md text-label-md uppercase"><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a><a class="hover:text-primary transition-colors" href="#">Note Legali</a></div></div></div></footer></body></html>

@@ -1,0 +1,17 @@
+{
+  "name": "Dock 71 Cantù | Birreria & Pub Industrial",
+  "short_name": "Dock 71",
+  "description": "Birreria artigianale, griglia, hamburger gourmet e pizza a lunga lievitazione 48h in Via Milano 71 a Cantù (CO).",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF9EB",
+  "theme_color": "#7B2039",
+  "icons": [
+    {
+      "src": "https://www.dock71birreria.it/produzione_cpanel/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

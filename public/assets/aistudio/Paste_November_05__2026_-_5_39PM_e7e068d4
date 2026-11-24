@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Dock 71 | Risto-Pub &amp; Birreria Portuale Cantù - Malto, Griglia, Rock'n'Roll</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;family=Alfa+Slab+One&amp;family=Epilogue:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&amp;family=Oleo+Script:wght@400;700&amp;family=Work+Sans:wght@300;400;500;600;700;800&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "dock-burgundy": "#7B2039",
+            "dock-burgundy-dark": "#5D0624",
+            "dock-burgundy-light": "#A83250",
+            "dock-green": "#003F32",
+            "dock-green-dark": "#002b22",
+            "dock-green-light": "#055C4A",
+            "dock-cream": "#FAF5EA",
+            "dock-cream-dark": "#EFE6D2",
+            "dock-parchment": "#F5EFE1",
+            "dock-mustard": "#E0A93B",
+            "dock-mustard-gold": "#C88D42",
+            "dock-carbon": "#191B1A",
+            "dock-carbon-dark": "#131414",
+            "dock-carbon-panel": "#232524",
+            "dock-carbon-light": "#323635"
+          },
+          fontFamily: {
+            "marker": ["'Permanent Marker'", "cursive"],
+            "chunky": ["'Alfa Slab One'", "serif"],
+            "oleo": ["'Oleo Script'", "cursive"],
+            "epilogue": ["Epilogue", "sans-serif"],
+            "work": ["'Work Sans'", "sans-serif"],
+            "mono-tech": ["'Share Tech Mono'", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Checkerboard ribbons styling inspired by social campaign */
+    .checker-ribbon-burgundy {
+      background-color: #FAF5EA;
+      background-image: 
+        linear-gradient(45deg, #7B2039 25%, transparent 25%), 
+        linear-gradient(-45deg, #7B2039 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #7B2039 75%), 
+        linear-gradient(-45deg, transparent 75%, #7B2039 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+    .checker-ribbon-green {
+      background-color: #FAF5EA;
+      background-image: 
+        linear-gradient(45deg, #003F32 25%, transparent 25%), 
+        linear-gradient(-45deg, #003F32 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #003F32 75%), 
+        linear-gradient(-45deg, transparent 75%, #003F32 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+    .checker-ribbon-carbon {
+      background-color: #FAF5EA;
+      background-image: 
+        linear-gradient(45deg, #191B1A 25%, transparent 25%), 
+        linear-gradient(-45deg, #191B1A 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #191B1A 75%), 
+        linear-gradient(-45deg, transparent 75%, #191B1A 75%);
+      background-size: 18px 18px;
+      background-position: 0 0, 0 9px, 9px -9px, -9px 0px;
+    }
+
+    /* Subtle Food & Pub Line-Art / Texture Overlay */
+    .bg-dock-texture-burgundy {
+      background-color: #7B2039;
+      background-image: radial-gradient(circle at 50% 50%, rgba(250, 245, 234, 0.04) 1px, transparent 1px),
+                        repeating-radial-gradient(circle at 10% 20%, transparent 0, transparent 40px, rgba(0,0,0,0.15) 41px, transparent 42px);
+      background-size: 28px 28px, 100% 100%;
+    }
+    .bg-dock-texture-green {
+      background-color: #003F32;
+      background-image: radial-gradient(circle at 50% 50%, rgba(250, 245, 234, 0.05) 1px, transparent 1px),
+                        repeating-radial-gradient(circle at 90% 80%, transparent 0, transparent 40px, rgba(0,0,0,0.18) 41px, transparent 42px);
+      background-size: 28px 28px, 100% 100%;
+    }
+    .bg-dock-texture-parchment {
+      background-color: #FAF5EA;
+      background-image: radial-gradient(#d3c7b0 0.85px, transparent 0.85px),
+                        repeating-linear-gradient(45deg, rgba(123, 32, 57, 0.015) 0px, rgba(123, 32, 57, 0.015) 2px, transparent 2px, transparent 10px);
+      background-size: 20px 20px, 100% 100%;
+    }
+    .bg-dock-texture-dark {
+      background-color: #191B1A;
+      background-image: radial-gradient(rgba(224, 169, 59, 0.08) 1px, transparent 1px),
+                        linear-gradient(to bottom, #1f2221, #131414);
+      background-size: 32px 32px, 100% 100%;
+    }
+
+    /* Comic / Hand-drawn bursts & stickers */
+    .burst-badge {
+      display: inline-block;
+      position: relative;
+      transform: rotate(-3deg);
+      box-shadow: 4px 5px 0px rgba(0,0,0,0.6);
+    }
+    .burst-badge-green {
+      transform: rotate(2deg);
+      box-shadow: 4px 5px 0px rgba(0,0,0,0.6);
+    }
+
+    /* Hand drawn ray lines effect */
+    .ray-burst::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      width: 24px;
+      height: 4px;
+      background: #E0A93B;
+      transform: rotate(-35deg);
+      border-radius: 2px;
+    }
+    .ray-burst::after {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: -10px;
+      width: 26px;
+      height: 4px;
+      background: #E0A93B;
+      transform: rotate(35deg);
+      border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #191B1A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #7B2039;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E0A93B;
+    }
+  </style>
+</head>
+<body class="bg-dock-texture-dark font-work text-[#E8E2D5] antialiased selection:bg-dock-burgundy selection:text-dock-cream">
+<!-- ========================================== -->
+<!-- TOP CHECKERBOARD BRAND BAND -->
+<!-- ========================================== -->
+<div class="h-3 w-full checker-ribbon-burgundy border-b border-black"></div>
+<!-- ========================================== -->
+<!-- OFFICIAL HEADER (CLEAN & COORDINATED) -->
+<!-- ========================================== -->
+<header class="sticky top-0 w-full z-50 bg-[#191B1A]/95 backdrop-blur-md border-b-2 border-[#333836] shadow-2xl">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4">
+<!-- LOGO DOCK 71 UFFICIALE -->
+<a class="flex items-center gap-3.5 group flex-shrink-0" data-path="home" href="#">
+<div class="relative w-13 h-13 p-0.5 rounded-full bg-dock-cream border-2 border-dock-mustard shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:rotate-[-3deg]">
+<img alt="Dock 71 Cantù Logo Ufficiale" class="h-12 w-12 object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9jNFxUoYNvJPhXCU4R_rC49JSHTSk93dMGXYPUfIzTKJKl5l4m0KfrPgRtoah57heUbGuYbmFa0meZu1BsceK-t3qgRd74n1KoeXZqIFGEvFgO2pGdur-B_M_Ejqq8yn_MtLsJI_CqEMeUwY57TaZ3lpFhbVDDnxxtXrAxd5RHFh1Gz7mVrUO6ctMrkDVONY-mRz1eW6qSqO89bNoTt8DikymLcxrHauUVyxyYYdPMTxI0UOth5gqG26N_3ubDHfWjAs"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-chunky text-xl sm:text-2xl text-dock-cream tracking-tight group-hover:text-dock-mustard transition-colors">DOCK 71</span>
+<span class="font-marker text-[11px] bg-dock-green px-2 py-0.5 text-dock-cream rounded shadow-sm border border-emerald-500/50">CANTÙ</span>
+</div>
+<span class="font-marker text-[11px] text-dock-mustard uppercase tracking-wide flex items-center gap-1.5">
+            MALTO • GRIGLIA • ROCK'N'ROLL
+          </span>
+</div>
+</a>
+<!-- MAIN NAVIGATION LINKS -->
+<nav class="hidden lg:flex items-center gap-1.5 p-1 rounded-xl bg-[#232524] border border-[#3A3F3C] shadow-inner">
+<a class="px-4 py-2 font-epilogue font-bold text-xs tracking-wider uppercase rounded-lg bg-dock-burgundy text-dock-cream shadow-md border border-dock-burgundy-light flex items-center gap-1.5" data-path="home" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-dock-mustard animate-ping"></span>
+          Home
+        </a>
+<a class="px-3.5 py-2 font-epilogue font-bold text-xs tracking-wider uppercase text-[#C4BDB0] hover:text-dock-cream hover:bg-[#2F3332] rounded-lg transition-all" data-path="menu" href="#">
+          Menù &amp; Birre
+        </a>
+<a class="px-3.5 py-2 font-epilogue font-bold text-xs tracking-wider uppercase text-[#C4BDB0] hover:text-dock-cream hover:bg-[#2F3332] rounded-lg transition-all" data-path="galleria" href="#">
+          Galleria
+        </a>
+<a class="px-3.5 py-2 font-epilogue font-bold text-xs tracking-wider uppercase text-[#C4BDB0] hover:text-dock-cream hover:bg-[#2F3332] rounded-lg transition-all" data-path="esperienze" href="#">
+          Da noi puoi...
+        </a>
+<a class="px-3.5 py-2 font-epilogue font-bold text-xs tracking-wider uppercase text-[#C4BDB0] hover:text-dock-cream hover:bg-[#2F3332] rounded-lg transition-all" data-path="contatti" href="#">
+          Contatti
+        </a>
+</nav>
+<!-- CONTACT CALL & PRENOTAZIONE CTA (NO PROFILE ICON) -->
+<div class="flex items-center gap-3 flex-shrink-0">
+<a class="hidden sm:flex items-center gap-2.5 px-3 py-1.5 rounded-lg border border-[#3C423F] bg-[#232524] hover:border-dock-mustard transition-colors group" href="tel:0314487120">
+<div class="w-8 h-8 rounded-full bg-dock-burgundy flex items-center justify-center text-dock-cream group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-marker text-[9px] uppercase tracking-wider text-[#A8A092]">TAVOLI &amp; WHATSAPP</span>
+<span class="font-epilogue text-xs font-black text-dock-cream tracking-wide">031 4487120</span>
+</div>
+</a>
+<a class="relative inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-dock-burgundy border-2 border-dock-burgundy-light text-dock-cream font-chunky text-xs uppercase tracking-wider shadow-[0_4px_14px_rgba(123,32,57,0.7)] hover:bg-dock-burgundy-dark hover:scale-[1.03] active:scale-95 transition-all" data-path="prenotazione" href="#">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-dock-mustard">table_restaurant</span>
+            PRENOTA ORA
+          </span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full relative">
+<!-- ======================================================= -->
+<!-- 1. HERO SECTION (ROCK POSTER VIBES + MONUMENTAL CRANE) -->
+<!-- ======================================================= -->
+<section class="relative w-full pt-10 pb-16 lg:py-20 overflow-hidden bg-dock-texture-dark border-b-4 border-[#333836]">
+<!-- Giant Doodle / Claim Stencil in Background -->
+<div class="absolute top-4 right-10 text-[120px] lg:text-[180px] font-chunky text-white/[0.02] select-none pointer-events-none tracking-tighter leading-none">
+        ROCK'N'ROLL
+      </div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+<!-- TOP TICKER WITH SOCIAL CAMPAIGN SLOGANS -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-8 border-b border-[#2E3331]">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="burst-badge px-3 py-1 bg-dock-mustard text-dock-carbon font-marker text-xs font-black uppercase tracking-wider">
+              ★ MALTO GRIGLIA ROCK'N'ROLL ★
+            </span>
+<span class="burst-badge-green px-3 py-1 bg-dock-green text-dock-cream font-marker text-xs font-bold uppercase tracking-wide border border-emerald-400/40">
+              IL PECCATO È NON VENIRE!
+            </span>
+<span class="hidden md:inline-block font-epilogue text-xs text-[#9E978A] font-semibold tracking-wider uppercase ml-2">
+              // GASTROPUB PORTUALE A CANTÙ • VIA MILANO 71
+            </span>
+</div>
+<div class="flex items-center gap-2 font-mono-tech text-xs text-dock-mustard bg-black/60 px-3 py-1 rounded-full border border-dock-mustard/40">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            14 SPINE ATTIVE ALLA SPINA
+          </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+<!-- Hero Text & Rock Headlines -->
+<div class="lg:col-span-6 flex flex-col">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="font-marker text-dock-mustard text-base tracking-widest uppercase relative ray-burst inline-block">
+                Good Beer, Great Food
+              </span>
+</div>
+<!-- Big Chunky / Brush Catchphrase from Social Posts -->
+<div class="mb-3">
+<span class="font-marker text-3xl sm:text-4xl lg:text-5xl text-dock-mustard block tracking-normal transform -rotate-1">
+                "IL PIACERE È TUTTO VOSTRO"
+              </span>
+</div>
+<h1 class="text-white text-3xl sm:text-4xl lg:text-[46px] leading-[1.15] mb-5 font-chunky uppercase tracking-tight">
+              Pizza, Sport, Birra &amp; Convivialità <br/>
+<span class="font-marker text-dock-burgundy-light bg-dock-cream text-dock-burgundy px-3 py-0.5 rounded inline-block transform rotate-1 mt-1">
+                sul Molo di Cantù!
+              </span>
+</h1>
+<p class="font-work text-[#D0C6B5] text-base lg:text-lg mb-8 leading-relaxed max-w-xl">
+              Pizze fragranti a <strong class="text-white font-bold">lievitazione lenta 48 ore</strong> con farine macinate a pietra, burger veraci battuti al coltello e tagliate alla brace. Vivi lo sport live e le serate tra amici attorno alla monumentale <strong class="text-dock-mustard font-semibold underline decoration-dock-burgundy decoration-2 underline-offset-4">gru industriale del 1912</strong> con parcheggio riservato gratuito.
+            </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 mb-8">
+<a class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-dock-burgundy hover:bg-dock-burgundy-dark text-dock-cream font-chunky text-sm uppercase tracking-wider shadow-[0_6px_20px_rgba(123,32,57,0.7)] border-2 border-dock-burgundy-light transition-all transform hover:-translate-y-0.5 active:scale-95 group" data-path="prenotazione" href="#">
+<span class="material-symbols-outlined mr-2 text-[22px] text-dock-mustard group-hover:rotate-12 transition-transform">restaurant</span>
+                PRENOTA UN TAVOLO
+              </a>
+<a class="inline-flex items-center justify-center px-6 py-4 rounded-xl bg-dock-cream hover:bg-white text-dock-carbon font-chunky text-sm uppercase tracking-wider border-2 border-dock-carbon shadow-md transition-all transform hover:-translate-y-0.5" data-path="menu" href="#">
+<span class="material-symbols-outlined mr-2 text-dock-burgundy text-[22px]">menu_book</span>
+                SCOPRI IL MENÙ
+              </a>
+<a class="inline-flex items-center gap-2 px-4 py-3.5 rounded-xl bg-[#232524] hover:bg-black text-[#D8CFBF] font-marker text-xs tracking-wider border border-[#3C423F]" href="https://wa.me/390314487120">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">chat</span>
+                WhatsApp Tavoli
+              </a>
+</div>
+<!-- Coordinate / Spec Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 p-3.5 rounded-xl bg-[#1F2221] border-2 border-[#373C3A] shadow-inner">
+<div class="flex flex-col border-r border-[#303533] pr-2">
+<span class="font-marker text-[11px] text-dock-mustard uppercase">CAPIENZA</span>
+<span class="font-chunky text-white text-base">170 Posti</span>
+</div>
+<div class="flex flex-col border-r border-[#303533] pr-2">
+<span class="font-marker text-[11px] text-dock-mustard uppercase">SKY SPORT HD</span>
+<span class="font-chunky text-white text-base">3 Maxischermi</span>
+</div>
+<div class="flex flex-col border-r border-[#303533] pr-2">
+<span class="font-marker text-[11px] text-dock-mustard uppercase">MONUMENTO</span>
+<span class="font-chunky text-emerald-400 text-sm">Gru Storica 1912</span>
+</div>
+<div class="flex flex-col">
+<span class="font-marker text-[11px] text-dock-mustard uppercase">PARCHEGGIO</span>
+<span class="font-chunky text-dock-cream text-base">Gratis 50+</span>
+</div>
+</div>
+</div>
+<!-- Hero Media (MONUMENTAL CRANE IMAGE IN VINTAGE PUB FRAME + CHECKER BORDER) -->
+<div class="lg:col-span-6 relative">
+<!-- Poster-like framed container -->
+<div class="relative p-3.5 bg-dock-carbon-panel rounded-2xl border-4 border-dock-mustard shadow-[0_20px_50px_rgba(0,0,0,0.85)]">
+<!-- Checkerboard Header Strip -->
+<div class="h-3 w-full checker-ribbon-green rounded-t mb-3 border border-black"></div>
+<!-- Top Bar with dock signature -->
+<div class="flex items-center justify-between pb-2 mb-2 border-b border-[#3A403D] px-1">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-dock-burgundy"></span>
+<span class="font-marker text-xs text-dock-cream tracking-wider uppercase">
+                    SALA CENTRALE • LA GRU ORIGINALE DEL 1912
+                  </span>
+</div>
+<span class="font-chunky text-[11px] bg-dock-mustard text-dock-carbon px-2 py-0.5 rounded shadow">
+                  DOCKYARD
+                </span>
+</div>
+<!-- Main Historic Crane Image -->
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden border-2 border-black bg-black group">
+<img alt="Sala centrale del Dock 71 con la monumentale gru storica del 1912" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95 contrast-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XxupyxkfMGHwtotjZ4IXSxhNJWBT0dNQMuDHHo-vcmJsTlYqwsVzDGEIrmhCfSVYACanJUq54A9QxP7WCYzXkj7RAx1Hbu8v5o9DW_8C4OJevohNdrk26W4c_cnRq8dX9x-rBvkdHV0utMfnPJSVN6v53E3YCPDlZc3di1GZBrdT8zsn3rY0L2PhorRTrDJJTaugFrg791cggiJiyPsbAEgzWg4nWfZ4S5QPuCZpjwd_gy4PsFMGD0b1uN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+<!-- Circular Logo Stamp Watermark -->
+<div class="absolute top-3 right-3 w-16 h-16 rounded-full bg-dock-cream/90 p-1 border-2 border-dock-burgundy shadow-xl pointer-events-none transform rotate-12 group-hover:rotate-0 transition-transform">
+<img alt="Dock 71 Stamp" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9jNFxUoYNvJPhXCU4R_rC49JSHTSk93dMGXYPUfIzTKJKl5l4m0KfrPgRtoah57heUbGuYbmFa0meZu1BsceK-t3qgRd74n1KoeXZqIFGEvFgO2pGdur-B_M_Ejqq8yn_MtLsJI_CqEMeUwY57TaZ3lpFhbVDDnxxtXrAxd5RHFh1Gz7mVrUO6ctMrkDVONY-mRz1eW6qSqO89bNoTt8DikymLcxrHauUVyxyYYdPMTxI0UOth5gqG26N_3ubDHfWjAs"/>
+</div>
+<!-- Social Badge Overlay: "NON È PER TUTTI!" -->
+<div class="absolute top-4 left-4">
+<span class="burst-badge px-3 py-1 bg-dock-burgundy text-dock-cream font-marker text-xs uppercase tracking-wider border border-dock-cream">
+                    NON È PER TUTTI!
+                  </span>
+</div>
+<!-- Floating bottom caption -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-black/80 backdrop-blur-md px-3.5 py-2 rounded-lg border border-[#3C423E]">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-dock-mustard text-[20px]">precision_manufacturing</span>
+<div>
+<span class="font-marker text-[11px] text-dock-mustard uppercase block leading-tight">Patrimonio di Cantù</span>
+<span class="font-work text-xs text-dock-cream font-semibold">Cene conviviali sotto il gigante d'acciaio</span>
+</div>
+</div>
+<span class="font-mono-tech text-xs text-emerald-400 font-bold bg-dock-green px-2 py-0.5 rounded">LIVE PUB</span>
+</div>
+</div>
+<!-- Checkerboard Bottom Strip -->
+<div class="h-3 w-full checker-ribbon-burgundy rounded-b mt-3 border border-black"></div>
+</div>
+<!-- Overlapping Rock Slogan Sticker -->
+<div class="hidden sm:flex absolute -bottom-5 -left-6 bg-dock-parchment text-dock-burgundy border-3 border-dock-carbon p-3.5 rounded-xl shadow-2xl items-center gap-3 max-w-xs z-20 transform -rotate-3 hover:rotate-0 transition-transform">
+<div class="w-12 h-12 rounded-full bg-dock-green text-dock-cream flex items-center justify-center flex-shrink-0 font-bold border-2 border-dock-carbon">
+<span class="material-symbols-outlined text-[24px]">sports_bar</span>
+</div>
+<div class="flex flex-col">
+<span class="font-marker text-xs text-dock-green font-bold">PIZZA • BURGER • BIRRA</span>
+<span class="font-epilogue text-xs text-dock-carbon font-extrabold leading-snug">Spine inglesi, belghe e artigianali a rotazione continua!</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================= -->
+<!-- 2. I PILASTRI DEL GUSTO (WITH SOCIAL POST IMAGES & SLOGANS) -->
+<!-- ======================================================= -->
+<section class="w-full py-20 bg-dock-texture-parchment text-dock-carbon relative border-b-4 border-[#333836]">
+<!-- Checkerboard Top Divider -->
+<div class="h-4 w-full checker-ribbon-burgundy mb-12 border-y border-black"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 pb-6 border-b-2 border-dock-carbon/20">
+<div>
+<div class="inline-flex items-center gap-2 font-marker text-dock-burgundy text-sm uppercase tracking-widest mb-1.5">
+              ★ CUCINA, LIEVITO &amp; FORNO A LEGNA ★
+            </div>
+<h2 class="font-chunky text-3xl sm:text-4xl text-dock-carbon uppercase tracking-tight">
+              I Pilastri del Gusto di Dock 71
+            </h2>
+</div>
+<p class="font-work text-[#4A453C] text-sm sm:text-base max-w-md font-medium leading-relaxed">
+            Dalla maturazione degli impasti al battuto delle carni sulla griglia: ogni ricetta è pensata per esaltare le nostre pinte e farti gridare <span class="font-marker text-dock-burgundy font-bold">"VIENI DI GUSTO!"</span>.
+          </p>
+</div>
+<!-- 4 CARDS WITH SOCIAL MEDIA VISUALS -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Pizze (Image 4 "IL PIACERE È TUTTO VOSTRO") -->
+<div class="group bg-white rounded-2xl border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5">
+<div class="relative h-56 overflow-hidden border-b-2 border-dock-carbon bg-dock-carbon">
+<img alt="Pizza artigianale Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ZyFsk0CAlmIJ-mpx_wcEHWiqPW5Rl-MVFVvU2pSkKBZ9mH2KMDXbMiZxsmJUbep3xzuhuZF-CY8AUlHlmqVVvJ97q0uTEF30Xus2HYuXjZq0gAcWQKnaYxJhSkpqwACovVLp5v1cyVK0I31xE2m3faHmZeO7Ti80Zsirk-_-HSAjNKzfHf8wSzN55Kp4ThHJ-I64SN00iDXPw6wyJiN-JfLKPQ5OMtbCTHEFtjU83cbgX02_EUhB9n_FTrm6aVKX82I"/>
+<!-- Slogan Sticker -->
+<div class="absolute top-2.5 left-2.5">
+<span class="burst-badge px-2.5 py-0.5 bg-dock-burgundy text-dock-cream font-marker text-[11px] uppercase border border-white">
+                  Lievitazione 48H
+                </span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-black/75 px-2 py-0.5 rounded text-dock-mustard font-marker text-[10px] uppercase">
+                Farine a Pietra
+              </div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-chunky text-lg text-dock-carbon uppercase mb-2 group-hover:text-dock-burgundy transition-colors">
+                  Pizze &amp; Focacce Lenta Lievitazione
+                </h3>
+<p class="font-work text-xs text-[#5C5446] leading-relaxed mb-4">
+                  Impasto ad alta idratazione maturato 48 ore a temperatura controllata. Cornicione alveolato, sapore autentico e massima digeribilità.
+                </p>
+</div>
+<div class="pt-3 border-t border-dock-carbon/15 flex items-center justify-between font-marker text-xs">
+<a class="text-dock-burgundy hover:text-dock-green font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-path="menu" href="#">
+                  Vedi Pizze <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-mono-tech text-[10px] text-dock-carbon/60">SPEC: PIZZA-48H</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Burger & Griglia (Image 5 "NON TI BASTA MAI!") -->
+<div class="group bg-white rounded-2xl border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5">
+<div class="relative h-56 overflow-hidden border-b-2 border-dock-carbon bg-dock-carbon">
+<img alt="Burger Gourmet Dock 71 Cantù" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM8L475a42ztnNLblYPinK5TI7vzGhlQaj6beNyBRWGwzrKKk7nkXya_FmbrTzO1GiqfmEZle-JY9MLKTXW2GhOjDx1rg44cGqevm6dj0HKZweSadh4gf3WAk4MPmYcrQo2kUU3g08mQl0z0_nQ4tNOAtBrrLcTHi0P0FybqZNunfCKTIIP4cKhsWJrC9GAPi84inzv68kzDj0Hs1hd-kwP7CFwYPTkpE9FK7ULcndZfYhBUp1czaRrh_gDfiHjWNC9W4"/>
+<!-- Slogan Sticker -->
+<div class="absolute top-2.5 left-2.5">
+<span class="burst-badge-green px-2.5 py-0.5 bg-dock-green text-dock-cream font-marker text-[11px] uppercase border border-white">
+                  NON TI BASTA MAI!
+                </span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-black/75 px-2 py-0.5 rounded text-dock-mustard font-marker text-[10px] uppercase">
+                100% Manzo Selezionato
+              </div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-chunky text-lg text-dock-carbon uppercase mb-2 group-hover:text-dock-burgundy transition-colors">
+                  Burger Gourmet &amp; Carni alla Brace
+                </h3>
+<p class="font-work text-xs text-[#5C5446] leading-relaxed mb-4">
+                  Patty generosi cotti alla griglia, bacon croccante, salse home-made e costine glassate da gustare con le mani.
+                </p>
+</div>
+<div class="pt-3 border-t border-dock-carbon/15 flex items-center justify-between font-marker text-xs">
+<a class="text-dock-burgundy hover:text-dock-green font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-path="menu" href="#">
+                  I Nostri Burger <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-mono-tech text-[10px] text-dock-carbon/60">SPEC: GRILL-ROCK</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Birre Artigianali (Image 6 "NON È PER TUTTI!") -->
+<div class="group bg-white rounded-2xl border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5">
+<div class="relative h-56 overflow-hidden border-b-2 border-dock-carbon bg-dock-carbon">
+<img alt="Birra alla spina Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkhWndZScHkbPn1j2F-_56ws8ZdxZ0zcD8N4WFY6cvbCJ4GjjUzQmxDJurx5_1AbB7WUNi-i5SGiKzeAoKjbBMXs2PQ67TthMRpbKMFsosA0xrmVHWc1qEpIuwgIyf5qNRrQdgkOAxZbweC0gz6UVl6NRdTltFJvxue_yk08f16zOHZics2oCKfxOTRXkrYtQK865LQ0G4Ru_phte7ppM4r-O3RY2KMLHyvieB7uDWiJjfwbvkROJa6YdFjGULHyzwRA4"/>
+<!-- Slogan Sticker -->
+<div class="absolute top-2.5 left-2.5">
+<span class="burst-badge px-2.5 py-0.5 bg-dock-mustard text-dock-carbon font-marker text-[11px] uppercase border border-black">
+                  14 SPINE A ROTAZIONE
+                </span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 bg-black/75 px-2 py-0.5 rounded text-white font-marker text-[10px] uppercase">
+                CASK &amp; CRAFT
+              </div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-chunky text-lg text-dock-carbon uppercase mb-2 group-hover:text-dock-burgundy transition-colors">
+                  Birre Artigianali &amp; d'Abbazia
+                </h3>
+<p class="font-work text-xs text-[#5C5446] leading-relaxed mb-4">
+                  Dalle luppolate IPA alle tradizionali belghe ad alta gradazione, fino alle stout a pompa inglese e alle weiss fresche.
+                </p>
+</div>
+<div class="pt-3 border-t border-dock-carbon/15 flex items-center justify-between font-marker text-xs">
+<a class="text-dock-burgundy hover:text-dock-green font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-path="menu" href="#">
+                  Consulta Tap List <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-mono-tech text-[10px] text-dock-carbon/60">SPEC: TAPS-14</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Business Lunch / Pranzo Cantù -->
+<div class="group bg-white rounded-2xl border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5">
+<div class="relative h-56 overflow-hidden border-b-2 border-dock-carbon bg-[#2A302D] flex items-center justify-center p-4">
+<!-- Illustrative poster card inside -->
+<div class="w-full h-full rounded-xl bg-dock-green p-4 flex flex-col justify-center items-center text-center text-dock-cream border-2 border-dashed border-dock-mustard">
+<span class="material-symbols-outlined text-dock-mustard text-4xl mb-1">lunch_dining</span>
+<span class="font-marker text-xs text-dock-mustard tracking-wider uppercase">LUN - VEN • 12:00 - 14:30</span>
+<span class="font-chunky text-lg text-white mt-1">PRANZO DI LAVORO</span>
+<span class="font-marker text-xs text-emerald-200 mt-1">Acqua, Caffè &amp; Coperto Inclusi</span>
+</div>
+<div class="absolute top-2.5 left-2.5">
+<span class="burst-badge px-2 py-0.5 bg-dock-burgundy text-dock-cream font-marker text-[10px] uppercase">
+                  BUSINESS FORMULA
+                </span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-chunky text-lg text-dock-carbon uppercase mb-2 group-hover:text-dock-burgundy transition-colors">
+                  Pranzi di Lavoro Veloci &amp; Genuini
+                </h3>
+<p class="font-work text-xs text-[#5C5446] leading-relaxed mb-4">
+                  Menù dedicati a professionisti e aziende con piatti unici, pizze a mezzogiorno e servizio rapido per la tua pausa.
+                </p>
+</div>
+<div class="pt-3 border-t border-dock-carbon/15 flex items-center justify-between font-marker text-xs">
+<a class="text-dock-burgundy hover:text-dock-green font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-path="menu" href="#">
+                  Formula Lunch <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-mono-tech text-[10px] text-dock-carbon/60">SPEC: BIZ-01</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Checkerboard Bottom Ribbon -->
+<div class="h-4 w-full checker-ribbon-burgundy mt-14 border-y border-black"></div>
+</section>
+<!-- ======================================================= -->
+<!-- 3. CENTRAL STREET POSTER BANNER (STYLE POST 8, 10 & 11) -->
+<!-- ======================================================= -->
+<section class="w-full py-16 bg-dock-texture-green text-dock-cream relative overflow-hidden border-b-4 border-black">
+<!-- Checkerboard Edge Bands (top & bottom) -->
+<div class="absolute top-0 inset-x-0 h-4 checker-ribbon-green border-b border-black"></div>
+<div class="absolute bottom-0 inset-x-0 h-4 checker-ribbon-green border-t border-black"></div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-8 relative z-10">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+<!-- Poster Typography Block -->
+<div class="flex flex-col items-center lg:items-start max-w-2xl">
+<div class="inline-flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-dock-cream p-0.5 border border-dock-carbon">
+<img alt="Dock 71 Stamp" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9jNFxUoYNvJPhXCU4R_rC49JSHTSk93dMGXYPUfIzTKJKl5l4m0KfrPgRtoah57heUbGuYbmFa0meZu1BsceK-t3qgRd74n1KoeXZqIFGEvFgO2pGdur-B_M_Ejqq8yn_MtLsJI_CqEMeUwY57TaZ3lpFhbVDDnxxtXrAxd5RHFh1Gz7mVrUO6ctMrkDVONY-mRz1eW6qSqO89bNoTt8DikymLcxrHauUVyxyYYdPMTxI0UOth5gqG26N_3ubDHfWjAs"/>
+</div>
+<span class="font-marker text-dock-mustard text-sm tracking-widest uppercase">
+                // GRIGLIA, MALTO E FARINA //
+              </span>
+</div>
+<!-- Big Chunky Catchphrase from Post 8 & 10 -->
+<h2 class="font-chunky text-4xl sm:text-5xl lg:text-6xl text-dock-cream leading-tight uppercase tracking-tight drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]">
+              MALTO • GRIGLIA <br/>
+<span class="text-dock-mustard font-marker block text-5xl sm:text-6xl lg:text-7xl -rotate-1 mt-1">
+                ROCK'N'ROLL!
+              </span>
+</h2>
+<p class="font-work text-dock-cream/90 text-base sm:text-lg mt-4 max-w-xl font-normal leading-relaxed">
+              Il gastropub dove la passione per la birra artigianale incontra la cucina verace e l'energia del rock. Nessuna formalità: solo cibo eccellente, grandi bicchieri e buona musica.
+            </p>
+<div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-6">
+<span class="burst-badge px-3 py-1 bg-dock-burgundy text-dock-cream font-marker text-xs uppercase border border-white">
+                "GOOD BEER, GREAT FOOD"
+              </span>
+<span class="burst-badge-green px-3 py-1 bg-dock-cream text-dock-carbon font-marker text-xs uppercase border border-dock-carbon">
+                "GOOD BURGER, BETTER BEER"
+              </span>
+</div>
+</div>
+<!-- Poster Graphic Badge / Call to Action -->
+<div class="flex flex-col items-center">
+<div class="p-6 rounded-2xl bg-dock-burgundy border-4 border-dock-mustard shadow-[8px_8px_0px_#191B1A] text-center max-w-xs transform rotate-2 hover:rotate-0 transition-transform">
+<span class="font-marker text-xs text-dock-mustard uppercase tracking-widest block mb-1">
+                NON FARTELO RACCONTARE
+              </span>
+<span class="font-chunky text-2xl text-dock-cream uppercase block mb-3">
+                IL PECCATO È NON VENIRE!
+              </span>
+<p class="font-work text-xs text-dock-cream/80 mb-5">
+                Vieni a vivere l'esperienza del porto a Cantù. Ti aspettiamo tutti i giorni a pranzo e a cena!
+              </p>
+<a class="inline-block w-full py-3 px-5 rounded-xl bg-dock-cream hover:bg-white text-dock-burgundy font-chunky text-xs uppercase tracking-wider shadow-lg transition-transform active:scale-95 border-2 border-dock-carbon" data-path="prenotazione" href="#">
+                PRENOTA UN TAVOLO ORA
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================= -->
+<!-- 4. VIVI L'ATMOSFERA DEI DOCK (3 ICONIC ROOMS) -->
+<!-- ======================================================= -->
+<section class="w-full py-20 bg-dock-texture-dark relative border-b-4 border-[#333836]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="max-w-2xl mb-14">
+<div class="inline-flex items-center gap-2 font-marker text-dock-mustard text-sm uppercase tracking-widest mb-2">
+            ★ GLI AMBIENTI DEL MOLO • 170 COPERTI ★
+          </div>
+<h2 class="font-chunky text-3xl sm:text-4xl text-white tracking-tight uppercase mb-3">
+            Vivi l'Atmosfera dei Dock
+          </h2>
+<p class="font-work text-[#ACA393] text-base leading-relaxed">
+            Spazi modulati con anima industriale autentica: dalla monumentale gru navale in acciaio rivettato fino alle spine in ottone e alla brezza della terrazza esterna.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Area 1: Sala Gru Storica -->
+<div class="bg-[#202322] border-3 border-[#3B423E] hover:border-dock-burgundy rounded-2xl overflow-hidden flex flex-col group transition-all duration-300 shadow-xl">
+<div class="relative h-64 overflow-hidden bg-black">
+<img alt="Sala Gru Storica Dock 71 Cantu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3goL5wftOE1Q0Jn3XW9wepLmafYnoLK6DG0YjeA4uu79aNRofuY5m6iNcrj7J8OJy0Rqnq9OiRlkMGV0DjgH2RuZ14npQyjdr3UG23hu3NuOZ2iB-bSlqPXf3DE7bTgQM4SpGr8wPmU01RDROxrJ8oYgCFT86iadh1A78x8cUAlHhanqcwYU1QFoMVuw_iB1_ch2Ys_hbzebLTtAkpK6sIrYifMIGkOw627Wts1p_6dxvqs9779JP_Q"/>
+<div class="absolute top-3 left-3 bg-black/85 border border-dock-mustard px-2.5 py-1 font-marker text-[11px] text-dock-mustard uppercase">
+                BAY 01 • 100 POSTI
+              </div>
+<div class="absolute bottom-3 right-3 bg-dock-burgundy text-dock-cream font-marker text-[10px] px-2.5 py-0.5 rounded">
+                GRU ACCIAIO 1912
+              </div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2.5">
+<span class="material-symbols-outlined text-dock-mustard text-[24px]">precision_manufacturing</span>
+<h3 class="font-chunky text-xl text-white uppercase">La Sala Gru Storica</h3>
+</div>
+<p class="font-work text-sm text-[#A8A092] leading-relaxed mb-6">
+                  Il cuore del locale dominato dalla maestosa gru originaria in ferro battuto. Lo spazio ideale per cene con amici, comitive numerose e partite di cartello.
+                </p>
+</div>
+<div class="pt-3 border-t border-[#313734] flex items-center justify-between font-mono-tech text-xs text-[#9DA6A0]">
+<span class="flex items-center gap-1.5 text-white font-semibold">
+<span class="w-2.5 h-2.5 rounded-full bg-dock-burgundy"></span> Maxischermo HD Centrale
+                </span>
+<span class="text-dock-mustard font-marker">TAVOLI GRUPPI</span>
+</div>
+</div>
+</div>
+<!-- Area 2: Il Grande Bancone -->
+<div class="bg-[#202322] border-3 border-[#3B423E] hover:border-dock-burgundy rounded-2xl overflow-hidden flex flex-col group transition-all duration-300 shadow-xl">
+<div class="relative h-64 overflow-hidden bg-black">
+<img alt="Bancone con spine birra Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCshzopm2dyKZ8PdefKFqR9ZBGUEoyzGv2R7vGEG-8kbFVANGRA9mniz0XHX0R9PGjwciUfYqv8bU5IPxUr_tcONfT_mN7wiB0WMJIkfrSFaPRaRecsg0NM6noOmDFo28o5U5SuIAS7-iWvIkklfFscHsr9baK5kHJE0v5QRzhNNRtwYnBx4sl1HdW5myzqqP6fKxw0g-XeKUZOha0PKLRdDgzLBl3URQS1o800hmeELATtZOJWQkNzGA"/>
+<div class="absolute top-3 left-3 bg-black/85 border border-dock-mustard px-2.5 py-1 font-marker text-[11px] text-dock-mustard uppercase">
+                BAY 02 • 30 SEDUTE
+              </div>
+<div class="absolute bottom-3 right-3 bg-dock-green text-emerald-200 font-marker text-[10px] px-2.5 py-0.5 rounded">
+                14 BRASS TAPS
+              </div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2.5">
+<span class="material-symbols-outlined text-dock-mustard text-[24px]">sports_bar</span>
+<h3 class="font-chunky text-xl text-white uppercase">Il Grande Bancone</h3>
+</div>
+<p class="font-work text-sm text-[#A8A092] leading-relaxed mb-6">
+                  Autentica atmosfera gastropub d'oltremanica. Sgabelli comodi, dialogo continuo con i nostri publican, spine lucenti in ottone e pinte fresche spillate a regola d'arte.
+                </p>
+</div>
+<div class="pt-3 border-t border-[#313734] flex items-center justify-between font-mono-tech text-xs text-[#9DA6A0]">
+<span class="flex items-center gap-1.5 text-white font-semibold">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> 14 Spine Artigianali
+                </span>
+<span class="text-dock-mustard font-marker">BEER TASTING</span>
+</div>
+</div>
+</div>
+<!-- Area 3: La Terrazza Estiva -->
+<div class="bg-[#202322] border-3 border-[#3B423E] hover:border-dock-burgundy rounded-2xl overflow-hidden flex flex-col group transition-all duration-300 shadow-xl">
+<div class="relative h-64 overflow-hidden bg-black">
+<img alt="Terrazza esterna Dock 71 Cantu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdJCypoTXPCd2SHPvIppJP3_l3VpigEe2vEHsZnpVYx7A_ndDjeDjkGZCYi2KFLY--jaCMMJH2q7ini7mHTUSh8iknaRHJzHKpqH5ggjVTmcrlSNYonTBnbgelp4sxaUVg1s5hHjXZlx1Gf1P5WbAjEKWaertF2YkO7uR6xQcpyZG00Ep0RMp1wZUPCw-4WhCNNUIjKXbPrWcjZCXfKJerw86CoHmanym5aj4sCw4LSaaELlEmQ2Y6PQ"/>
+<div class="absolute top-3 left-3 bg-black/85 border border-dock-mustard px-2.5 py-1 font-marker text-[11px] text-dock-mustard uppercase">
+                BAY 03 • 40 POSTI
+              </div>
+<div class="absolute bottom-3 right-3 bg-[#382F24] text-dock-mustard font-marker text-[10px] px-2.5 py-0.5 rounded">
+                DEHORS ESTIVO
+              </div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2.5">
+<span class="material-symbols-outlined text-dock-mustard text-[24px]">deck</span>
+<h3 class="font-chunky text-xl text-white uppercase">La Terrazza Estiva</h3>
+</div>
+<p class="font-work text-sm text-[#A8A092] leading-relaxed mb-6">
+                  Il dehors perfetto per le tiepide serate estive e primaverili. Luci vintage a filari, servizio al tavolo puntuale e rilassante brezza sotto il cielo di Cantù.
+                </p>
+</div>
+<div class="pt-3 border-t border-[#313734] flex items-center justify-between font-mono-tech text-xs text-[#9DA6A0]">
+<span class="flex items-center gap-1.5 text-white font-semibold">
+<span class="w-2.5 h-2.5 rounded-full bg-dock-mustard"></span> All'Aperto &amp; Riservata
+                </span>
+<span class="text-dock-mustard font-marker">OPEN AIR</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================= -->
+<!-- 5. MOMENTI DAL MOLO / GALLERIA INSTAGRAM & SCATTI -->
+<!-- ======================================================= -->
+<section class="w-full py-20 bg-dock-texture-parchment text-dock-carbon relative border-b-4 border-black">
+<!-- Checkerboard Top Band -->
+<div class="h-3 w-full checker-ribbon-carbon border-b border-black"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 mt-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 pb-6 border-b-2 border-dock-carbon/20">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-dock-burgundy text-dock-cream font-marker text-xs uppercase mb-2">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+              LOGBOOK LIVE // @DOCK71_CANTU
+            </div>
+<h2 class="font-chunky text-3xl sm:text-4xl text-dock-carbon uppercase tracking-tight">
+              Momenti dal Molo: Scatti &amp; Atmosfera
+            </h2>
+<p class="font-work text-[#4D4537] text-sm sm:text-base mt-1 max-w-xl">
+              I veri protagonisti dei nostri canali social: pinte spillate fresche, pizze fumanti e bistecche cotte alla perfezione.
+            </p>
+</div>
+<a class="inline-flex items-center px-5 py-3 rounded-xl bg-dock-burgundy hover:bg-dock-burgundy-dark text-dock-cream font-chunky text-xs uppercase tracking-wider shadow-md transition-all group" data-path="galleria" href="#">
+<span>ESPLORA TUTTA LA GALLERIA</span>
+<span class="material-symbols-outlined ml-2 text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Bento Grid with Authentic Social Visuals -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-5">
+<!-- Photo 1: Bistecca & Birra (Image 12 "VIENI DI GUSTO!") -->
+<div class="sm:col-span-2 lg:col-span-6 group relative h-80 lg:h-96 rounded-2xl overflow-hidden border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] bg-black">
+<img alt="Bistecca alla brace e birra artigianale Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI4a2J_hEgXqx9tWC1Y_TCI-U_Su4rKR1aXxThUwzEBco1V8WDFmc7Nkv_ZCgqPugR_1p0BWoVL7xHeH1NoTf0QLUVFfyVqcMYNTrDrGGVq_6WL3B1g8XdjLqyHXByZCjmf9gXfsCEJOfut8oNUJfzSkfr_hya7tua-Tml1ExesYI81m2fSyjaL1yWrfqVXCn11eHgpBEqmqA1P9YOGfwUxMbzH01Hi6PjZtXBrk7EB02u6eQg3R8lsU64h33vciahARo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="burst-badge px-3 py-1 bg-dock-mustard text-dock-carbon font-marker text-xs uppercase border border-black">
+                VIENI DI GUSTO!
+              </span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+<div>
+<span class="font-marker text-xs text-dock-mustard uppercase block">BRACE &amp; CASK BEER</span>
+<h4 class="font-chunky text-lg text-white">Tagliata alla Griglia e Birra Scura</h4>
+</div>
+<span class="p-2 rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</span>
+</div>
+</div>
+<!-- Photo 2: Pizza Napoletana 48h (Image 4) -->
+<div class="sm:col-span-1 lg:col-span-6 group relative h-80 lg:h-96 rounded-2xl overflow-hidden border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] bg-black">
+<img alt="Pizza lievitazione naturale Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ZyFsk0CAlmIJ-mpx_wcEHWiqPW5Rl-MVFVvU2pSkKBZ9mH2KMDXbMiZxsmJUbep3xzuhuZF-CY8AUlHlmqVVvJ97q0uTEF30Xus2HYuXjZq0gAcWQKnaYxJhSkpqwACovVLp5v1cyVK0I31xE2m3faHmZeO7Ti80Zsirk-_-HSAjNKzfHf8wSzN55Kp4ThHJ-I64SN00iDXPw6wyJiN-JfLKPQ5OMtbCTHEFtjU83cbgX02_EUhB9n_FTrm6aVKX82I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="burst-badge-green px-3 py-1 bg-dock-green text-dock-cream font-marker text-xs uppercase border border-white">
+                IL PIACERE È TUTTO VOSTRO
+              </span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+<div>
+<span class="font-marker text-xs text-dock-mustard uppercase block">FORNO A PIETRA</span>
+<h4 class="font-chunky text-lg text-white">Margherita Verace 48 Ore</h4>
+</div>
+<span class="p-2 rounded-full bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</span>
+</div>
+</div>
+<!-- Photo 3: Burger Gourmet (Image 5) -->
+<div class="lg:col-span-4 group relative h-72 rounded-2xl overflow-hidden border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] bg-black">
+<img alt="Burger succoso Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM8L475a42ztnNLblYPinK5TI7vzGhlQaj6beNyBRWGwzrKKk7nkXya_FmbrTzO1GiqfmEZle-JY9MLKTXW2GhOjDx1rg44cGqevm6dj0HKZweSadh4gf3WAk4MPmYcrQo2kUU3g08mQl0z0_nQ4tNOAtBrrLcTHi0P0FybqZNunfCKTIIP4cKhsWJrC9GAPi84inzv68kzDj0Hs1hd-kwP7CFwYPTkpE9FK7ULcndZfYhBUp1czaRrh_gDfiHjWNC9W4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-marker text-[11px] text-dock-mustard uppercase block">NON TI BASTA MAI!</span>
+<h4 class="font-chunky text-base text-white">Bacon Cheese Supreme</h4>
+</div>
+</div>
+<!-- Photo 4: Birra Bionda Fresca (Image 6) -->
+<div class="lg:col-span-4 group relative h-72 rounded-2xl overflow-hidden border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] bg-black">
+<img alt="Boccale di birra fresca Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkhWndZScHkbPn1j2F-_56ws8ZdxZ0zcD8N4WFY6cvbCJ4GjjUzQmxDJurx5_1AbB7WUNi-i5SGiKzeAoKjbBMXs2PQ67TthMRpbKMFsosA0xrmVHWc1qEpIuwgIyf5qNRrQdgkOAxZbweC0gz6UVl6NRdTltFJvxue_yk08f16zOHZics2oCKfxOTRXkrYtQK865LQ0G4Ru_phte7ppM4r-O3RY2KMLHyvieB7uDWiJjfwbvkROJa6YdFjGULHyzwRA4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-marker text-[11px] text-dock-mustard uppercase block">NON È PER TUTTI!</span>
+<h4 class="font-chunky text-base text-white">Pinta Artigianale alla Spina</h4>
+</div>
+</div>
+<!-- Photo 5: Atmosfera Terrazza & Gru -->
+<div class="lg:col-span-4 group relative h-72 rounded-2xl overflow-hidden border-3 border-dock-carbon shadow-[6px_6px_0px_#191B1A] bg-black">
+<img alt="Brindisi serale in terrazza Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFMk-u6y6gcaJAUNWnf1miWU_7qoHEL6mvrtpgLccl1y_s-rFZUQvmVMoiZLMwlV-AIOK8-KKvTanFlMKvBNUo-a1tqQydUPqWEpyqhsTuUSkISVShG44leGMAeTPilS-Xt5iDXquUAV5UnCIL95kZDT7rSts3E11xrwS3Nv3fOHlIOhEFM2nH-jcK5pmlha8EZyaDT2E72q-65VIqAbooHaPY5dHbFCtPGEjaaET2HKWWpkf-dMS7yQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-marker text-[11px] text-dock-mustard uppercase block">BRINDISI SOTTO LE STELLE</span>
+<h4 class="font-chunky text-base text-white">Serate Estive &amp; Convivialità</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Checkerboard Bottom Band -->
+<div class="h-3 w-full checker-ribbon-carbon border-t border-black mt-12"></div>
+</section>
+<!-- ======================================================= -->
+<!-- 6. MATCH DAY & SKY SPORT HD (CONSOLLE LIVE & ROCK MATCH) -->
+<!-- ======================================================= -->
+<section class="w-full py-20 bg-dock-texture-dark relative border-b-4 border-[#333836]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="bg-[#1F2221] border-4 border-dock-carbon rounded-3xl p-6 sm:p-10 lg:p-12 relative shadow-2xl overflow-hidden">
+<!-- Checkerboard Top Edge -->
+<div class="absolute top-0 inset-x-0 h-3 checker-ribbon-burgundy"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mt-2">
+<div class="lg:col-span-7">
+<div class="flex flex-wrap items-center gap-3 mb-4">
+<span class="burst-badge px-3 py-1 bg-dock-burgundy text-white font-marker text-xs uppercase border border-white">
+                  LIVE MATCH • SKY SPORT HD
+                </span>
+<span class="font-marker text-xs text-dock-mustard bg-black/60 px-3 py-1 rounded-full border border-dock-mustard/40">
+                  LO STADIO AL PUB
+                </span>
+</div>
+<h2 class="font-chunky text-3xl sm:text-4xl text-white tracking-tight uppercase mb-4">
+                Lo Sport dal Vivo su Tre Schermi Giganti
+              </h2>
+<p class="font-work text-[#AAA291] text-base leading-relaxed mb-6">
+                Serie A TIM, UEFA Champions League, Formula 1, Sei Nazioni di Rugby e Eurolega di Basket. Nessun angolo cieco: impianto audio multizona calibrato per goderti la partita con la migliore birra alla spina della Brianza.
+              </p>
+<!-- Match Schedule Cards -->
+<div class="space-y-3 mb-8">
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-black/50 border border-[#3A403D]">
+<div class="flex items-center gap-3">
+<span class="font-marker text-xs px-2.5 py-1 bg-dock-burgundy text-white rounded">MERCOLEDÌ 21:00</span>
+<span class="font-epilogue text-sm font-bold text-white">UEFA Champions League • Quarti di Finale</span>
+</div>
+<span class="font-marker text-xs text-dock-mustard uppercase hidden sm:inline-block">Tavoli Caldi</span>
+</div>
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-black/50 border border-[#3A403D]">
+<div class="flex items-center gap-3">
+<span class="font-marker text-xs px-2.5 py-1 bg-dock-green text-emerald-200 rounded">DOMENICA 20:45</span>
+<span class="font-epilogue text-sm font-bold text-white">Serie A Big Match • Diretta Esclusiva</span>
+</div>
+<span class="font-marker text-xs text-emerald-400 uppercase hidden sm:inline-block">Prenotazione Consigliata</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center px-6 py-3.5 rounded-xl bg-dock-burgundy hover:bg-dock-burgundy-dark text-white font-chunky text-xs uppercase tracking-wider shadow-lg border border-dock-burgundy-light" data-path="prenotazione" href="#">
+                  PRENOTA TAVOLO PARTITA
+                </a>
+<a class="font-marker text-xs text-dock-mustard hover:underline inline-flex items-center gap-1.5" data-path="esperienze" href="#">
+                  Vedi palinsesto completo <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Tech Console Box -->
+<div class="lg:col-span-5">
+<div class="p-6 rounded-2xl bg-black/60 border-2 border-[#3A403D] relative">
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-[#2C322F]">
+<span class="font-marker text-xs text-dock-mustard uppercase flex items-center gap-2">
+                    ★ IMPIANTO MULTIZONA LIVE
+                  </span>
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-3 p-3 rounded-xl bg-[#232725] border border-[#333835]">
+<span class="material-symbols-outlined text-dock-mustard text-[24px] mt-0.5">tv</span>
+<div>
+<h5 class="font-chunky text-xs text-white uppercase">3 Maxischermi Ultra-HD</h5>
+<p class="font-work text-xs text-[#9FA7A2]">Visibilità garantita dalla Sala Gru al bancone.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-[#232725] border border-[#333835]">
+<span class="material-symbols-outlined text-dock-mustard text-[24px] mt-0.5">volume_up</span>
+<div>
+<h5 class="font-chunky text-xs text-white uppercase">Audio Separato per Tifosi</h5>
+<p class="font-work text-xs text-[#9FA7A2]">Telecronaca coinvolgente senza impedire il relax al tavolo.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-[#232725] border border-[#333835]">
+<span class="material-symbols-outlined text-dock-mustard text-[24px] mt-0.5">sports_bar</span>
+<div>
+<h5 class="font-chunky text-xs text-white uppercase">Menù Pinta &amp; Pizza Rapido</h5>
+<p class="font-work text-xs text-[#9FA7A2]">Servizio veloce prima del fischio d'inizio e all'intervallo.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================= -->
+<!-- 7. VIENI A TROVARCI A CANTÙ (INFO, PARKING & MAPPA) -->
+<!-- ======================================================= -->
+<section class="w-full py-20 bg-[#161817] relative border-b-4 border-[#333835]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+<!-- Info Column -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-2 font-marker text-dock-mustard text-sm uppercase tracking-widest mb-2">
+                ★ COORDINATE, ORARI &amp; CONTATTI ★
+              </div>
+<h2 class="font-chunky text-3xl sm:text-4xl text-white tracking-tight uppercase mb-4">
+                Vieni a Trovarci a Cantù
+              </h2>
+<p class="font-work text-[#AAA291] text-base leading-relaxed mb-6">
+                Siamo in <strong class="text-white">Via Milano 71</strong>, sulla direttrice strategica Como - Cantù - Brianza. Parcheggio privato gratuito con oltre 50 posti auto direttamente davanti e sul retro dell'ingresso.
+              </p>
+<!-- Info Blocks -->
+<div class="space-y-4 mb-8">
+<div class="p-4 rounded-xl bg-[#1E2220] border-2 border-[#353B38] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-dock-mustard text-[26px]">location_on</span>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-chunky text-xs text-white uppercase">Indirizzo Dock</span>
+<span class="bg-dock-burgundy text-dock-cream text-[10px] font-marker px-1.5 py-0.5 rounded">CANTÙ CO</span>
+</div>
+<span class="font-work text-sm text-[#A8A092] block">Via Milano 71, 22063 Cantù (Como)</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-[#1E2220] border-2 border-[#353B38] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-dock-mustard text-[26px]">schedule</span>
+<div>
+<span class="font-chunky text-xs text-white uppercase block mb-1">Orari di Apertura (7 Giorni su 7)</span>
+<span class="font-work text-xs text-[#A8A092] block">Pranzo: 12:00 – 14:30 (Lun - Dom)</span>
+<span class="font-work text-xs text-[#A8A092] block">Cena &amp; Birreria: 18:30 – 01:00 (Ven e Sab fino alle 02:00)</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-[#1E2220] border-2 border-[#353B38] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-emerald-400 text-[26px]">local_parking</span>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-chunky text-xs text-white uppercase">Parcheggio Dedicato Gratuito</span>
+<span class="bg-dock-green text-emerald-200 text-[10px] font-marker px-1.5 py-0.5 rounded font-bold">&gt; 50 POSTI</span>
+</div>
+<span class="font-work text-sm text-[#A8A092] block">Ampio piazzale riservato e illuminato proprio davanti al pub.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#232725] hover:bg-black border border-dock-mustard text-white font-chunky text-xs uppercase" href="tel:0314487120">
+<span class="material-symbols-outlined text-dock-mustard text-[18px]">call</span>
+                Chiama: 031 4487120
+              </a>
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-dock-green hover:bg-dock-green-light text-white font-chunky text-xs uppercase border border-emerald-500" href="https://wa.me/390314487120">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                WhatsApp Rapido
+              </a>
+</div>
+</div>
+<!-- Map & Parking Exterior Visuals -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="w-full h-80 rounded-2xl bg-cover bg-center border-3 border-dock-carbon shadow-xl relative overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDlKVmcV3DshijIyVKKD-VmyXPbk5IoDnh7z69nD6nk_THcQZCSx1tRjgaLoYUfzkFoWmbCymaeA-6FJAxi4CtXoVObXVpg2VSXRAkUKfFDFkVwllNQWylyzfgtnN2UFUQLWmzCkslDawiK7o2fnhkIzXV_clXM0xOB5oaupRy5jwhQbW_Qe9cL9hpH_O9SORT7b4SnvwT41hmyS2tXhOn_raBoYzuflF67dFLRtT0PKzcK9rTzHfZ8g')">
+<div class="absolute inset-0 bg-black/20"></div>
+<!-- Dock Pin Badge -->
+<div class="absolute bottom-4 left-4 p-3 rounded-xl bg-[#181B1A]/95 border-2 border-dock-mustard shadow-2xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-dock-burgundy text-white flex items-center justify-center border border-white/20">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<div class="flex flex-col">
+<span class="font-chunky text-xs text-white uppercase">DOCK 71 CANTÙ</span>
+<span class="font-work text-xs text-[#A8A092]">Via Milano 71 • Parcheggio Privato Riservato</span>
+</div>
+</div>
+</div>
+<!-- Two Exterior Photos -->
+<div class="grid grid-cols-2 gap-4">
+<div class="h-44 rounded-xl overflow-hidden relative border-2 border-[#333835] group">
+<img alt="Parcheggio privato illuminato Dock 71" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3vZX5e3ezCGJYX1SBAVjxi42efKQMEc7i4LIkCF7rbWkQQySwlNrmzsENT6Xa3TYjRHtm-yFfkMn_sFtgrM1GVzDo2VCzByIZIR5Rhydsm-Ui7IFnCLow7mQvvl7eimXksDa_gMvJ74sGD5KkCby15fi9edF_lv9JHKmqZwpgJIfTNCmkQWd0WnxG0O1txTwrhOUMS5G16gryTBLBeecE7_U6nLgWHOSQdLzSTO4pEM95BnpmaTCubQ"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-black/85 text-dock-mustard font-marker text-[10px] uppercase border border-dock-mustard/60">
+                  AMPIO PARCHEGGIO RISERVATO
+                </div>
+</div>
+<div class="h-44 rounded-xl overflow-hidden relative border-2 border-[#333835] group">
+<img alt="Ingresso accogliente Dock 71 serale" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAlc_iwTQyiGKMKuni_t3s_P6cCfUkQCWWax2Om4xmZo-S1LilaWg907tKLao9TCrH7NLl99KNBgUW2WsMa2Ml8coBscVHlegeI5TDrh7dYAHCwx7-iU5Oo0FQJAUHl38aoSCIeIhiWBpEktjg7aTgS1b9rj3w8usvKyb31N9FqLPZDChFpozDdpIkiCH9yyFlSaCBZmW-WJTWDOVpvN7nPZ8kNoJEZ_9_zagTFKDWz8LpxTwUlxIXqg"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-black/85 text-dock-cream font-marker text-[10px] uppercase border border-dock-burgundy">
+                  INGRESSO PRINCIPALE DOCK
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================= -->
+<!-- 8. BANNER PRENOTAZIONE FINALE (POSTER ROCK BURGUNDY) -->
+<!-- ======================================================= -->
+<section class="w-full py-16 bg-dock-carbon-dark relative">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="relative overflow-hidden rounded-3xl bg-dock-texture-burgundy p-8 lg:p-14 border-4 border-dock-mustard shadow-[8px_8px_0px_#000000]">
+<!-- Checkerboard Corner Top Ribbon -->
+<div class="absolute top-0 right-0 w-48 h-6 checker-ribbon-carbon transform rotate-45 translate-x-12 translate-y-4"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="burst-badge px-3 py-1 bg-dock-cream text-dock-burgundy font-marker text-xs uppercase font-black">
+                  TAVOLI &amp; COMPLEANNI
+                </span>
+<span class="font-marker text-xs text-dock-mustard uppercase tracking-wider">NON RISCHIARE DI RESTARE IN PIEDI</span>
+</div>
+<h2 class="font-chunky text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight uppercase mb-4 leading-tight">
+                Assicurati il Tuo Posto al Molo!
+              </h2>
+<p class="font-work text-dock-cream/90 text-base max-w-2xl leading-relaxed">
+                Cene tra amici, visione match su maxischermo, compleanni o pranzi veloci di lavoro: prenota online in pochi istanti oppure contattaci direttamente su WhatsApp per tavolate numerose.
+              </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-center">
+<a class="inline-flex items-center justify-center px-6 py-4 rounded-xl bg-dock-cream hover:bg-white text-dock-burgundy font-chunky text-sm uppercase tracking-wider shadow-2xl transition-all active:scale-95 text-center border-2 border-dock-carbon" data-path="prenotazione" href="#">
+<span class="material-symbols-outlined mr-2 text-[22px]">calendar_month</span>
+                PRENOTA ONLINE ORA
+              </a>
+<a class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-dock-green hover:bg-dock-green-light text-white font-chunky text-xs uppercase tracking-wider shadow-lg transition-all text-center border border-emerald-400" href="https://wa.me/390314487120">
+<span class="material-symbols-outlined mr-2 text-[20px]">chat</span>
+                WHATSAPP: 031 4487120
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ======================================================= -->
+<!-- 9. FOOTER INDUSTRIALE ROCK CON LOGO DOCK 71 -->
+<!-- ======================================================= -->
+<footer class="w-full bg-[#111312] text-[#A69E8F] pt-16 pb-12 border-t-4 border-[#2D3330]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+<!-- Col 1: Brand & Identity with Official Logo -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-13 h-13 rounded-full bg-dock-cream p-1 border-2 border-dock-mustard flex items-center justify-center flex-shrink-0">
+<img alt="Dock 71 Cantù Logo" class="h-11 w-11 object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9jNFxUoYNvJPhXCU4R_rC49JSHTSk93dMGXYPUfIzTKJKl5l4m0KfrPgRtoah57heUbGuYbmFa0meZu1BsceK-t3qgRd74n1KoeXZqIFGEvFgO2pGdur-B_M_Ejqq8yn_MtLsJI_CqEMeUwY57TaZ3lpFhbVDDnxxtXrAxd5RHFh1Gz7mVrUO6ctMrkDVONY-mRz1eW6qSqO89bNoTt8DikymLcxrHauUVyxyYYdPMTxI0UOth5gqG26N_3ubDHfWjAs"/>
+</div>
+<div class="flex flex-col">
+<span class="font-chunky text-xl text-white uppercase tracking-wider">DOCK 71</span>
+<span class="font-marker text-[11px] text-dock-mustard uppercase">MALTO, GRIGLIA, ROCK'N'ROLL</span>
+</div>
+</div>
+<p class="font-work text-xs leading-relaxed text-[#968E80]">
+            Gastropub autentico d'ispirazione portuale a Cantù. Lievitazioni controllate a 48 ore, tagliate su pietra lavica, 14 birre artigianali a rotazione continua e maxischermi HD dedicati allo sport.
+          </p>
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1D1C] border border-[#333835] rounded-lg font-marker text-[11px] text-dock-mustard">
+            ★ CANTIERE ATTIVO 7 GIORNI SU 7 ★
+          </div>
+</div>
+<!-- Col 2: Navigation -->
+<div class="flex flex-col gap-3">
+<span class="font-chunky text-xs text-white uppercase tracking-widest border-b border-[#2D3330] pb-2">
+            NAVIGAZIONE MOLO
+          </span>
+<ul class="flex flex-col gap-2 font-epilogue text-xs font-semibold">
+<li><a class="hover:text-dock-mustard transition-colors" data-path="home" href="#">// HOME PAGE</a></li>
+<li><a class="hover:text-dock-mustard transition-colors" data-path="menu" href="#">// MENÙ &amp; BIRRE ARTIGIANALI</a></li>
+<li><a class="hover:text-dock-mustard transition-colors" data-path="galleria" href="#">// GALLERIA FOTOGRAFICA</a></li>
+<li><a class="hover:text-dock-mustard transition-colors" data-path="esperienze" href="#">// DA NOI PUOI... (SKY SPORT HD)</a></li>
+<li><a class="hover:text-dock-mustard transition-colors" data-path="contatti" href="#">// DOVE SIAMO &amp; CONTATTI</a></li>
+<li><a class="text-dock-burgundy-light font-bold hover:underline" data-path="prenotazione" href="#">// PRENOTA UN TAVOLO</a></li>
+</ul>
+</div>
+<!-- Col 3: Dove Siamo & Coordinate -->
+<div class="flex flex-col gap-3">
+<span class="font-chunky text-xs text-white uppercase tracking-widest border-b border-[#2D3330] pb-2">
+            DOVE CI TROVI
+          </span>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-dock-mustard text-[20px] mt-0.5">location_on</span>
+<div class="font-work text-xs">
+<span class="text-white font-semibold block">Via Milano 71, 22063 Cantù (CO)</span>
+<span class="text-[#888173] block mt-0.5">Direttrice Como - Cantù - Brianza</span>
+<span class="text-emerald-400 block mt-1 font-marker text-[11px]">• 50+ POSTI AUTO GRATUITI RISERVATI</span>
+</div>
+</div>
+<div class="mt-2 pt-2 border-t border-[#262A29] flex flex-col gap-2 font-epilogue text-xs">
+<a class="inline-flex items-center gap-2 text-white hover:text-dock-mustard font-bold" href="tel:0314487120">
+<span class="material-symbols-outlined text-dock-mustard text-[16px]">call</span> 031 4487120
+            </a>
+<a class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-bold" href="https://wa.me/390314487120">
+<span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp Rapido
+            </a>
+</div>
+</div>
+<!-- Col 4: Orari di Servizio -->
+<div class="flex flex-col gap-3">
+<span class="font-chunky text-xs text-white uppercase tracking-widest border-b border-[#2D3330] pb-2">
+            ORARI DEL LOCALE
+          </span>
+<div class="p-3.5 rounded-xl bg-[#181B1A] border border-[#2D3330] flex flex-col gap-2">
+<div class="flex items-center justify-between font-marker text-[11px]">
+<span class="text-white uppercase">LUNEDÌ – DOMENICA</span>
+<span class="px-2 py-0.5 rounded bg-dock-green text-emerald-300 font-bold">7 / 7 APERTI</span>
+</div>
+<div class="font-work text-xs text-[#968E80] flex flex-col gap-1">
+<span>Pranzo: 12:00 – 14:30</span>
+<span>Cena: 18:30 – 01:00</span>
+<span class="text-dock-mustard font-marker text-[11px]">Ven &amp; Sab: fino alle 02:00</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<a class="w-9 h-9 rounded-lg bg-[#1B1E1D] border border-[#333835] hover:border-dock-mustard text-white hover:text-dock-mustard flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a>
+<a class="w-9 h-9 rounded-lg bg-[#1B1E1D] border border-[#333835] hover:border-dock-mustard text-white hover:text-dock-mustard flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-9 h-9 rounded-lg bg-[#1B1E1D] border border-[#333835] hover:border-dock-mustard text-white hover:text-dock-mustard flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">reviews</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="pt-8 border-t border-[#292E2C] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono-tech text-[11px] text-[#7A7265]">
+<span>© 2025 DOCK 71 CANTÙ • GASTROPUB, PIZZERIA &amp; CASK BEER. P.IVA 03144871201</span>
+<div class="flex items-center gap-5">
+<a class="hover:text-dock-mustard transition-colors" href="#">PRIVACY POLICY</a>
+<a class="hover:text-dock-mustard transition-colors" href="#">COOKIE POLICY</a>
+<a class="hover:text-dock-mustard transition-colors" href="#">TERMINI</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

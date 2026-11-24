@@ -1,0 +1,74 @@
+# ==============================================================================
+# DOCK 71 CANTÙ - ROOT .HTACCESS PER LITESPEED / CPANEL
+# - Gestione URL puliti (senza estensione .php)
+# - Codifica UTF-8
+# - Protezione dei file sensibili e di configurazione (.env, config.php, .git)
+# - Caching e compressione per massime performance Core Web Vitals su LiteSpeed
+# ==============================================================================
+
+# Codifica predefinita UTF-8
+AddDefaultCharset UTF-8
+DefaultLanguage it-IT
+
+# Forza i MIME Types corretti per moduli ES6 JavaScript, CSS, PDF e Immagini su LiteSpeed/Apache
+<IfModule mod_mime.c>
+    AddType application/javascript .js .mjs
+    AddType text/javascript .js .mjs
+    AddType text/css .css
+    AddType application/json .json
+    AddType image/webp .webp
+    AddType image/avif .avif
+    AddType image/svg+xml .svg
+    AddType application/pdf .pdf
+</IfModule>
+
+# Disabilita listing delle cartelle
+Options -Indexes +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Forza HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Blocca accesso diretto a file sensibili, repository Git e log
+    RewriteRule ^(\.git|\.env|config\.example\.php|package\.json|tsconfig\.json|\.cpanel\.yml) - [F,L]
+
+    # Reindirizza Thank You Pages pulite a script PHP se presenti
+    RewriteRule ^grazie-contatto/?$ /backend/grazie-contatto.php [L,QSA]
+    RewriteRule ^grazie-prenotazione/?$ /backend/grazie-prenotazione.php [L,QSA]
+
+    # Se la richiesta corrisponde a un file reale o cartella esistente, servila direttamente
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Rimuovi estensione .php dagli URL (URL puliti)
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+    # Routing SPA / Catch-all per React frontend o gestione 404
+    RewriteRule ^index\.html$ - [L]
+    RewriteRule . /index.html [L]
+</IfModule>
+
+# Gestione pagina 404 personalizzata con status HTTP 404 reale
+ErrorDocument 404 /index.html
+
+# Protezione file sensibili
+<FilesMatch "^\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh|env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Caching browser e compressione LiteSpeed
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

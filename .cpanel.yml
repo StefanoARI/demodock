@@ -1,0 +1,30 @@
+---
+# ==============================================================================
+# DOCK 71 CANTÙ - CONFIGURAZIONE DEPLOY AUTOMATICO CPANEL / VHOSTING
+# Percorso nel repository: .cpanel.yml (nella ROOT del repository GitHub)
+# ==============================================================================
+
+deployment:
+  tasks:
+    # 1. Definisci automaticamente la cartella public_html dell'account cPanel (es. /home/dock71b1/public_html/)
+    - export DEPLOYPATH=$HOME/public_html/
+
+    # 2. Assicura l'esistenza della cartella /uploads/ e sottocartelle
+    - /bin/mkdir -p $DEPLOYPATH/uploads/images/
+    - /bin/mkdir -p $DEPLOYPATH/uploads/videos/
+
+    # 3. Sincronizza i file compilati pronti per la produzione (cartella produzione_cpanel/) dentro public_html
+    - /bin/rsync -av --delete \
+        --exclude='.git*' \
+        --exclude='.cpanel.yml' \
+        --exclude='uploads/' \
+        --exclude='backend/uploads/' \
+        --exclude='config.php' \
+        --exclude='.env' \
+        ./produzione_cpanel/ $DEPLOYPATH
+
+    # 4. Assegna i corretti permessi su file e cartelle per server LiteSpeed / Apache su vHosting
+    - /bin/find $DEPLOYPATH -type d -exec /bin/chmod 755 {} \;
+    - /bin/find $DEPLOYPATH -type f -exec /bin/chmod 644 {} \;
+    - /bin/chmod 755 $DEPLOYPATH/uploads/images/
+    - /bin/chmod 755 $DEPLOYPATH/uploads/videos/
